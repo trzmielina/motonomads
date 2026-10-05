@@ -1,0 +1,48 @@
+# Domínio 06, 07 & 09: Equipamentos, Segurança e Manutenção Preventiva em Campo
+# Itens fundamentais testados pela equipe MotoNomads para preservação física e autonomia na estrada.
+
+equipamentos_e_seguranca:
+  - id: "sistema_tres_camadas"
+    nome: "Sistema de Três Camadas de Vestuário"
+    categoria: "Vestuário de Pilotagem e Expedição"
+    camada_1: "Segunda pele térmica em poliamida ou lã Merino (absorve e dissipa o suor sem gelar o corpo)"
+    camada_2: "Fleece térmico ou jaqueta leve de pluma (cria câmara de ar aquecido isolante)"
+    camada_3: "Jaqueta em Cordura 500D/1000D com membrana impermeável/respirável (Gore-Tex ou equivalente) e protetores CE Nível 2"
+    regras_de_uso:
+      - "Nunca utilizar algodão como primeira camada: o algodão encharca de suor e gela na serra, induzindo hipotermia."
+      - "Ajustar zíperes de ventilação frontal e exaustão traseira antes de entrar em trechos de baixa velocidade no calor."
+
+  - id: "capacete_expedicao_dual_sport"
+    nome: "Capacete Dual Sport / Híbrido com Pala e Viseira"
+    categoria: "Segurança de Cabeça"
+    caracteristicas_obrigatorias:
+      - "Pala aerodinâmica ventilada para bloquear sol de frente e galhos em trilhas."
+      - "Espaço interno para acoplamento de alto-falantes e microfone de intercomunicador."
+      - "Fecho tipo Duplo D ou micrométrico metálico."
+      - "Lente Pinlock antiembaçante instalada na viseira (indispensável para serras com neblina)."
+
+  - id: "botas_touring_adventure_articuladas"
+    nome: "Botas de Cano Alto com Articulação de Tornozelo"
+    categoria: "Proteção de Membros Inferiores"
+    especificacoes:
+      - "Caneleira frontal rígida contra pancadas de pedras arremessadas pelo pneu dianteiro."
+      - "Sola antiderrapante de alta aderência para apoiar o pé em pedras molhadas e lama."
+      - "Articulação mecânica que impede a torção lateral do tornozelo em caso de queda com a moto sobre a perna."
+
+  - id: "kit_reparo_pneu_e_compressor"
+    nome: "Kit de Resgate de Pneus e Compressor Portátil"
+    categoria: "Manutenção de Emergência de Campo"
+    itens_obrigatorios:
+      - "Compressor digital portátil de alta pressão com bateria recarregável USB-C e cabo auxiliar 12V."
+      - "Escareador de aço, agulha de inserção e tiras vulcanizantes (macarrão) para pneus tubeless."
+      - "Para pneus com câmara: 2 espátulas de 25cm com pegada ergonômica, câmara dianteira aro 21 (serve na traseira em emergência) e talco."
+      - "Manômetro analógico ou digital calibrado para verificação precisa de PSI."
+
+  - id: "comunicador_satelital_bidirecional"
+    nome: "Rastreador e Comunicador Satelital (SOS)"
+    modelos_referencia: ["Garmin inReach Mini 2", "ZOLEO Satellite Communicator"]
+    categoria: "Segurança Crítica em Zonas Remotas"
+    recursos:
+      - "Envio de coordenadas GPS em tempo real para familiares e equipe de resgate."
+      - "Botão de emergência SOS dedicado conectado à central internacional GEOS / IERCC."
+      - "Troca de mensagens de texto bidirecionais 100% via constelação satelital Iridium fora da cobertura de celular."

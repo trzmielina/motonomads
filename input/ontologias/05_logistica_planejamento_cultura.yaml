@@ -1,0 +1,44 @@
+# Domínio 04, 10, 11, 12, 13 & 14: Logística, Planejamento, Hospedagem, Gastronomia e Pessoas
+# O ecossistema humano e de suporte que transforma uma rota no mapa em uma jornada inesquecível.
+
+logistica_e_cultura:
+  - id: "padrao_cidade_base_motonomads"
+    nome: "Critérios de Cidade-Base para Expedições"
+    categoria: "Logística e Hospedagem"
+    requisitos_obrigatorios:
+      - "Borracharia com ferramentas para remover rodas de motos pesadas ou veículos 4x4."
+      - "Pelo menos um posto de combustível confiável com histórico de combustível sem adulteração."
+      - "Pousadas com estacionamento interno, seguro e preferencialmente coberto para guarda das motos e bagagens."
+      - "Oficina mecânica ou loja de autopeças capaz de fornecer lubrificantes 10W40/15W50 e fusíveis."
+
+  - id: "documentacao_fronteiras_america_do_sul"
+    nome: "Guia Oficial de Documentação de Fronteira"
+    categoria: "Planejamento e Burocracia Internacional"
+    documentos_exigidos:
+      - "Seguro Carta Verde: obrigatório para Argentina, Paraguai e Uruguai (cobre danos a terceiros)."
+      - "Seguro SOAPEX: seguro obrigatório de acidentes pessoais para tráfego no território chileno."
+      - "CRLV (Certificado de Registro e Licenciamento de Veículo) em nome do condutor ou com autorização consular reconhecida em cartório."
+      - "CNH válida (a Permissão Internacional para Dirigir - PID é altamente recomendada para evitar extorsões policiais)."
+      - "RG emitido há menos de 10 anos ou Passaporte válido."
+
+  - id: "gastronomia_vernacular_de_estrada"
+    nome: "Mapeamento da Culinária Vernacular por Rota"
+    categoria: "Gastronomia e Cultura Regional"
+    rotas_e_pratos:
+      serra_catarinense:
+        pratos: ["Truta grelhada na manteiga de ervas", "Entrevero de pinhão na chapa", "Queijo artesanal serrano curado"]
+        bebidas: ["Vinho de altitude de São Joaquim", "Suco de maçã integral local"]
+      serra_da_canastra:
+        pratos: ["Queijo Canastra de leite cru premiado internacionalmente", "Feijão tropeiro com torresmo de rolo", "Galinha caipira com quiabo e angu"]
+      cerrado_e_jalapao:
+        pratos: ["Chambari cozido com mandioca na pressão", "Arroz com pequi e carne de sol", "Paçoca de carne de panela socada no pilão"]
+      patagonia_argentina:
+        pratos: ["Cordeiro patagônico assado lentamente no espeto de ferro (fogo de chão)", "Truta patagônica defumada", "Empanadas de carne cortada na faca"]
+
+  - id: "irmandade_e_conexoes_humanas"
+    nome: "Código de Estrada e Encontros MotoNomads"
+    categoria: "Pessoas e Vivência Comunitária"
+    principios:
+      - "O aceno na estrada: mão esquerda aberta para baixo ou pé estendido ao ultrapassar outro piloto são símbolos universais de respeito e solidariedade."
+      - "Regra de ouro do acostamento: moto ou carro parado no acostamento exige parada imediata de quem vem atrás para perguntar se precisa de ajuda mecânica ou água."
+      - "Humildade nos povoados: conversar com os moradores mais velhos das vilas revela as melhores dicas de trilhas, perigos e histórias locais que não estão no Google Maps."

@@ -1,0 +1,81 @@
+# Domínio 01 & 02: Destinos Geográficos e Grandes Rotas de Expedição
+# Entidades centrais do universo MotoNomads e suas propriedades técnicas e ambientais.
+
+destinos_e_rotas:
+  - id: "serra_do_rio_do_rastro"
+    nome: "Serra do Rio do Rastro (SC-390)"
+    tipo: "Serra Asfaltada de Alta Montanha"
+    estado_pais: "Santa Catarina, Brasil"
+    cidades_limite: ["Lauro Müller", "Bom Jardim da Serra"]
+    extensao_km: 25
+    curvas_totais: 284
+    altimetria_minima_m: 200
+    altimetria_maxima_m: 1421
+    tipo_pavimento: "Concreto ranhurado / Asfalto sinuoso"
+    severidade: "Média-Alta (exige freio motor e atenção à neblina)"
+    melhor_epoca: "Abril a Outubro (menor índice de chuvas torrenciais)"
+    conexoes:
+      veiculos: ["big_trail_500_1250", "crossover_600_1000", "4x4_overlanding"]
+      equipamentos: ["conjunto_3_camadas_impermeavel", "luvas_com_membrana_termica", "intercomunicador"]
+      pilotagem: ["frenagem_motor_segunda_marcha", "contraesterco_curvas_cegas", "modulo_aceleracao_progressiva"]
+      riscos: ["neblina_densa_subita", "oleo_na_pista_caminhoes", "gelo_inverno_madrugada", "vento_cortante_mirante"]
+      cidades_base: ["lauro_muller", "bom_jardim_da_serra", "sao_joaquim", "urubici"]
+      gastronomia: ["truta_da_serra", "queijo_serrano_artesanal", "entrevero_de_pinhao"]
+      caso_eduardo: "eduardo_neblina_rio_do_rastro"
+
+  - id: "serra_da_canastra"
+    nome: "Parque Nacional da Serra da Canastra"
+    tipo: "Planalto Rochoso / Estrada Parque Off-Road"
+    estado_pais: "Minas Gerais, Brasil"
+    cidades_limite: ["São Roque de Minas", "Vargem Bonita", "Delfinópolis", "Sacramento"]
+    extensao_km: 180
+    altimetria_maxima_m: 1496
+    tipo_pavimento: "Cascalho solto, pedras pontiagudas, lajes de rio, poeira vermelha e valetas"
+    severidade: "Alta (pedras afiadas, travessia de água sem ponte)"
+    melhor_epoca: "Maio a Setembro (período de estiagem; chuvas tornam rios intransponíveis)"
+    conexoes:
+      veiculos: ["big_trail_aro_21_offroad", "trail_250_450cc", "4x4_reduzida_guincho"]
+      equipamentos: ["pneu_com_cravo_ou_50_50", "kit_reparo_pneu_tubeless_camara", "filtro_ar_reserva", "compressor_portatil"]
+      pilotagem: ["pilotagem_em_pe_pedras", "leitura_profundidade_rio", "pressao_pneu_reduzida_24psi"]
+      riscos: ["furar_pneu_laje_pedra", "calco_hidraulico_travessia_rio", "trecho_sem_celular_100km", "queda_na_areia_cascalho"]
+      cidades_base: ["sao_roque_de_minas", "vargem_bonita", "capitolio"]
+      gastronomia: ["queijo_canastra_artesanal_cru", "galinhada_caipira_fogao_lenha", "doce_de_leite_tacho"]
+      caso_eduardo: "eduardo_pneu_rasgado_canastra"
+
+  - id: "jalapao"
+    nome: "Travessia do Jalapão"
+    tipo: "Deserto de Areia Fofa e Savana / Cerrado"
+    estado_pais: "Tocantins, Brasil"
+    cidades_limite: ["Ponte Alta do Tocantins", "Mateiros", "São Félix do Tocantins"]
+    extensao_km: 420
+    altimetria_maxima_m: 400
+    tipo_pavimento: "Areia fofa profunda, costelas de vaca severas, cascalho solto"
+    severidade: "Extrema para motos pesadas (areião longo exige técnica e preparo físico)"
+    melhor_epoca: "Maio a Setembro (estação seca, porém areia fica mais fofa; pós-chuva a areia compacta)"
+    conexoes:
+      veiculos: ["trail_leve_media", "big_trail_com_piloto_experiente", "4x4_pneus_at_mt"]
+      equipamentos: ["mochila_hidratacao_3l", "calibragem_18_20_psi_areia", "bota_enduro_articulada", "placas_desatolamento"]
+      pilotagem: ["acelerador_cheio_areia", "peso_atras_eixo_traseiro", "guidao_solto_sem_brigar"]
+      riscos: ["exaustao_termica_e_desidratacao", "enterrar_a_moto_na_areia", "quebra_subchassi_por_peso", "falta_de_postos"]
+      cidades_base: ["ponte_alta_do_tocantins", "mateiros", "palmas"]
+      gastronomia: ["chambari_com_mandioca", "arroz_com_pequi", "biscoito_amor_perfeito"]
+      caso_eduardo: "eduardo_areiao_jalapao_peso"
+
+  - id: "ruta_40_patagonia"
+    nome: "Ruta 40 Austral (Trecho Patagônico)"
+    tipo: "Estepes Patagônicas / Rodovia Continental"
+    estado_pais: "Patagônia, Argentina"
+    cidades_limite: ["Bariloche", "Perito Moreno", "Gobernador Gregores", "El Calafate"]
+    extensao_km: 1400
+    altimetria_maxima_m: 900
+    tipo_pavimento: "Rípio (cascalho solto e pedras roladas) intercalado com asfalto ranhurado"
+    severidade: "Muito Alta (ventos laterais contínuos de até 90 km/h e isolamento severo)"
+    melhor_epoca: "Novembro a Março (verão austral; restante do ano com neve e estradas bloqueadas)"
+    conexoes:
+      veiculos: ["big_trail_autonomia_350km", "overlanding_4x4_com_tanque_extra"]
+      equipamentos: ["segunda_pele_termica_merino", "galao_combustivel_rotomoldado", "seguro_carta_verde_soapex", "rastreador_satelital"]
+      pilotagem: ["angulo_inclinacao_contra_vento", "velocidade_constante_ripio", "cuidado_com_sulcos_pedra"]
+      riscos: ["rajadas_que_jogam_fora_da_pista", "pedras_lancadas_por_caminhoes", "trecho_sem_posto_320km", "queda_temperatura_brusca"]
+      cidades_base: ["bariloche", "el_chalten", "el_calafate", "gobernador_gregores"]
+      gastronomia: ["cordeiro_patagonico_ao_fogo_de_chao", "empanadas_saltenhas", "cervejas_artesanais_sul"]
+      caso_eduardo: "eduardo_vento_patagonico_rajada"

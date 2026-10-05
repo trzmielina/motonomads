@@ -1,0 +1,57 @@
+# Domínio 03 & 15: Histórias, Vivências e Casos Reais de Eduardo Generali
+# A matéria-prima de experiências que os agentes utilizam para trazer autenticidade e autoridade prática aos textos.
+
+casos_reais_eduardo:
+  - id: "eduardo_neblina_rio_do_rastro"
+    titulo: "A Cerração Cega da Serra do Rio do Rastro"
+    destino_associado: "serra_do_rio_do_rastro"
+    situacao: "Subida da serra às 17h, onde a visibilidade caiu subitamente para menos de 3 metros com chuva e temperatura de 7°C."
+    o_que_aconteceu: >
+      A viseira embaçou completamente por dentro por falta de Pinlock e o farol alto batia na neblina como uma parede branca.
+      Tive que abrir um dedo da viseira para enxergar a linha lateral de concreto e manter a moto em segunda marcha o tempo todo,
+      tracionando suave para não perder o equilíbrio nos cotovelos mais íngremes.
+    licao_pratica: >
+      Nunca suba uma serra sem lente antiembaçante (Pinlock) instalada e jaqueta estanque. E a regra de ouro na neblina:
+      farol baixo sempre, pisca-alerta ligado e o olhar fixado na linha da borda externa da pista para não perder a referência espacial.
+    frase_eduardo: "A serra não é lugar de provar velocidade; é lugar de respeitar a montanha e manter o motor cheio."
+
+  - id: "eduardo_pneu_rasgado_canastra"
+    titulo: "O Pneu Rasgado nas Pedras da Canastra"
+    destino_associado: "serra_da_canastra"
+    situacao: "Descida para a parte alta da Cachoeira Casca d'Anta com a moto carregada de bagagem e pneus cheios com 36 PSI."
+    o_que_aconteceu: >
+      Entrei com muita pressão em uma laje pontiaguda de quartzito. O pneu traseiro bateu seco, trincou a carcaça lateral
+      e esvaziou instantaneamente. Estávamos a 40 km do vilarejo mais próximo, sem sinal celular e o sol do meio-dia fritando.
+      Tentamos colocar 3 macarrões no rasgo, mas a pressão vazava pela lateral.
+    licao_pratica: >
+      Na pedra afiada, pneu muito duro não deforma sobre o obstáculo e acaba cortando. A pressão precisa ser aliviada para 24 PSI.
+      E para salvar a viagem, só conseguimos sair dali porque tínhamos levado uma câmara de ar aro 21 reserva na bagagem,
+      que coube na roda traseira aro 18 em caráter de emergência e permitiu rodar até a pousada.
+    frase_eduardo: "Ferramenta e câmara reserva na mala não são peso morto; são o seu passaporte de volta para casa."
+
+  - id: "eduardo_areiao_jalapao_peso"
+    titulo: "O Mergulho no Areião Fofo do Jalapão"
+    destino_associado: "jalapao"
+    situacao: "Primeira expedição com Big Trail pesada com malas de alumínio carregadas rumo a Mateiros."
+    o_que_aconteceu: >
+      Na primeira valeta de areia fina e fofa, o instinto inicial foi segurar o guidão com força e frear no susto.
+      A roda dianteira cravou até o eixo e eu voei por cima da bolha. Foram 40 minutos sob sol de 38°C para desenterrar
+      a moto que parecia estar chumbada no chão.
+    licao_pratica: >
+      Areia é contraintuitiva para quem só pilota no asfalto: você não pode frear a dianteira e jamais deve segurar o guidão tenso.
+      Você precisa levantar nas pedaleiras, jogar o quadril para trás, deixar o guidão dançar solto nas mãos e manter o acelerador
+      aberto. Quem acelera plana na areia; quem hesita e tira a mão afunda.
+    frase_eduardo: "Na areia, a indecisão é o seu pior inimigo. O acelerador é quem manda na direção."
+
+  - id: "eduardo_vento_patagonico_rajada"
+    titulo: "A Rajada Lateral de 90 km/h na Ruta 40"
+    destino_associado: "ruta_40_patagonia"
+    situacao: "Travessia no rípio aberto entre Gobernador Gregores e Tres Lagos na Argentina."
+    o_que_aconteceu: >
+      O vento oeste soprava de lado como um martelo invisível. Pilotávamos com a moto permanentemente inclinada a uns 20 graus
+      apenas para conseguir andar em linha reta. De repente, um caminhão tanque cruzou no sentido oposto: ele criou uma zona de vácuo
+      onde a moto caiu reta e, assim que o caminhão passou, a rajada voltou com força total jogando a moto 2 metros para a valeta do acostamento.
+    licao_pratica: >
+      No vento patagônico, reduza uma marcha para manter o motor em giro alto (o giro do virabrequim e das rodas atua como um giroscópio
+      estabilizador). E ao cruzar com veículos pesados, antecipe o vácuo: não espere o choque de ar acontecer para reagir.
+    frase_eduardo: "A Patagônia te ensina humildade em cada curva. Ali, quem manda no ritmo é o vento."

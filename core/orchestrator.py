@@ -11,6 +11,7 @@ from typing import Dict, Any, Optional
 from core.crawler import ArticleExtractor
 from core.tone_matrix import ToneMatrixEvaluator
 from core.geo_optimizer import GeoSeoOptimizer
+from core.ontology_engine import OntologyEngine
 
 from agents.diego_jornalista import DiegoJornalista
 from agents.marina_estrategista import MarinaEstrategista
@@ -30,6 +31,7 @@ class MotonomadsOrchestrator:
         self.extractor = ArticleExtractor()
         self.tone_evaluator = ToneMatrixEvaluator(os.path.join(base_dir, "config/tone_of_voice.yaml"))
         self.geo_optimizer = GeoSeoOptimizer(os.path.join(base_dir, "config/geo_seo_guidelines.yaml"))
+        self.ontology = OntologyEngine(os.path.join(base_dir, "input/ontologias"))
 
         # Carregar time de agentes
         self.diego = DiegoJornalista()
@@ -84,9 +86,36 @@ class MotonomadsOrchestrator:
         titulo_original = raw_data.get("title", "Expedição sem título")
         conteudo_original = raw_data.get("content", "")
 
+        # ETAPA INTERMEDIÁRIA: Consulta ao Grafo Ontológico MotoNomads
+        step("Etapa de Inteligência: Cruzando entidades e relações no Grafo Ontológico...")
+        ontological_data = self.ontology.build_ontological_brief(f"{titulo_original} {conteudo_original}")
+        contexto_ontologico_txt = ""
+        if ontological_data.get("matched"):
+            contexto_ontologico_txt = (
+                f"\n\n--- DADOS VINCULADOS DO GRAFO ONTOLÓGICO MOTONOMADS ---\n"
+                f"Destino Mapeado: {ontological_data.get('destino_principal')}\n"
+                f"Tipo de Pavimento: {ontological_data.get('tipo_estrada')}\n"
+                f"Extensão e Altimetria: {ontological_data.get('extensao_e_altimetria')}\n"
+                f"Nível de Severidade: {ontological_data.get('nivel_severidade')}\n"
+                f"Melhor Época: {ontological_data.get('melhor_epoca')}\n"
+                f"Cidades-Base de Apoio: {', '.join(ontological_data.get('cidades_base_logistica', []))}\n"
+                f"Riscos Críticos de Campo: {', '.join(ontological_data.get('riscos_criticos', []))}\n"
+                f"Gastronomia Vernacular: {', '.join(ontological_data.get('gastronomia_vernacular', []))}\n"
+            )
+            hist = ontological_data.get("historia_real_eduardo")
+            if hist and hist.get("titulo"):
+                contexto_ontologico_txt += (
+                    f"\nHistória Real do Eduardo Generali para Conexão:\n"
+                    f"- Caso: {hist.get('titulo')}\n"
+                    f"- Situação: {hist.get('situacao')}\n"
+                    f"- Lição Prática: {hist.get('licao_pratica')}\n"
+                    f"- Frase de Efeito do Eduardo: '{hist.get('frase_de_efeito')}'\n"
+                )
+
         # ETAPA 2: Investigação Jornalística & Enriquecimento
         step(f"Etapa 2/6: Diego Jornalista realizando fact-checking e dossiê investigativo...")
-        dossie_jornalistico = self.diego.investigar_e_enriquecer(conteudo_original, titulo_original)
+        texto_para_investigacao = f"{conteudo_original}\n{contexto_ontologico_txt}"
+        dossie_jornalistico = self.diego.investigar_e_enriquecer(texto_para_investigacao, titulo_original)
 
         # ETAPA 3: Arquitetura de SEO Tradicional & GEO para IAs
         step("Etapa 3/6: Marina Estrategista desenhando arquitetura de busca e blocos de citação para IAs...")

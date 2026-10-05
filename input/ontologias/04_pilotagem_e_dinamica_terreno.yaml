@@ -1,0 +1,44 @@
+# Domínio 05: Pilotagem Técnica e Dinâmica por Tipo de Terreno
+# Técnicas corporais, mecânicas e físicas para conduzir motos pesadas e veículos em condições severas.
+
+pilotagem_e_terreno:
+  - id: "pilotagem_ripio_cascalho"
+    terreno: "Rípio, Cascalho Solto e Pedras Roladas"
+    postura_corporal:
+      - "Pilotar em pé nas pedaleiras na maior parte do tempo em trechos instáveis."
+      - "Manter os joelhos pressionando levemente a lateral do tanque para estabilizar o centro de gravidade da moto."
+      - "Braços semi-flexionados e punhos relaxados: não brigar com o guidão quando a roda dianteira dançar no cascalho."
+    frenagem_e_tracao:
+      - "Desativar ou utilizar o modo Off-Road no ABS da roda traseira."
+      - "Frenagem principal progressiva na dianteira e modulação de apoio na traseira."
+      - "Aceleração constante: a roda traseira sob tração funciona como um leme que estabiliza a trajetória da moto."
+    pressao_pneus: "Reduzir entre 20% e 25% da pressão nominal de asfalto para aumentar a pegada (área de contato)."
+
+  - id: "pilotagem_areia_fofa_e_dunas"
+    terreno: "Areia Fofa, Areião de Cerrado e Bancos Flutuantes"
+    postura_corporal:
+      - "Corpo deslocado para trás, aliviando o peso da roda dianteira para impedir que ela crave e empilhe areia."
+      - "Guidão solto nas mãos, deixando a dianteira flutuar sobre a camada superior."
+    frenagem_e_tracao:
+      - "NUNCA usar o freio dianteiro de forma brusca na areia fofa sob risco de queda imediata."
+      - "Manter o acelerador aberto com rotação média-alta: velocidade gera estabilidade dinâmica na areia."
+      - "Se a moto começar a afundar a traseira, parar imediatamente de acelerar para não cavar um buraco até o chassi."
+    pressao_pneus: "Reduzir para 16 a 18 PSI em motos com trava de talão ou 20 PSI sem trava."
+
+  - id: "pilotagem_serra_asfalto_e_curvas_cegas"
+    terreno: "Serra de Asfalto / Concreto com Cotovelos Íngremes (Hairpins)"
+    postura_corporal:
+      - "Postura neutra e relaxada, com ombros paralelos ao guidão e olhar projetado no ponto mais distante da saída da curva."
+      - "Cabeça na linha do horizonte, sem olhar para o chão ou para a mureta de proteção."
+    frenagem_e_tracao:
+      - "Frenagem total concluída ANTES de iniciar a inclinação da moto."
+      - "Uso primordial do freio motor em marchas curtas (2ª ou 3ª) para evitar fervura do fluido de freio."
+      - "Aplicação do contraesterço: empurrar o lado esquerdo do guidão para inclinar para a esquerda e vice-versa."
+      - "Manter aceleração constante e suave durante toda a trajetória da curva."
+
+  - id: "pilotagem_vento_lateral_extremo"
+    terreno: "Estepes Abertas, Pontes Fluviais e Mirantes Desabrigados"
+    tecnica_especifica:
+      - "Adotar marcha mais baixa (reduzir uma marcha) para manter a rotação do motor alta; o efeito giroscópico do virabrequim e das rodas estabiliza a motocicleta contra rajadas laterais."
+      - "Inclinar o corpo e a moto levemente contra o vento, antecipando que ao cruzar com um caminhão grande no sentido oposto haverá vácuo momentâneo seguido de choque de ar."
+      - "Relaxar os braços e abaixar a cabeça próximo à bolha para reduzir o arrasto aerodinâmico frontal e lateral."

@@ -1,0 +1,82 @@
+# Domínio 08: Motocicletas e Veículos 4x4 de Expedição
+# Especificações técnicas, configurações de fábrica, pontos fortes e vulnerabilidades mecânicas.
+
+motocicletas_e_veiculos:
+  - id: "big_trail_aro_21_offroad"
+    categoria: "Big Trail de Alta Aventura (Aro 21 Dianteiro)"
+    modelos_referencia: ["BMW F 850 / 900 GS", "Triumph Tiger 900 Rally Pro", "Honda CRF 1100L Africa Twin", "Yamaha Ténéré 700"]
+    aro_dianteiro_polegadas: 21
+    aro_traseiro_polegadas: 18
+    curso_suspensao_mm: "220 a 250 mm"
+    transmissao_final: "Corrente selada com O-Ring/X-Ring"
+    autonomia_tanque_km: "320 a 450 km"
+    capacidade_carga_kg: 210
+    pontos_fortes:
+      - "Excelente capacidade de transposição de valetas e pedras soltas devido ao diâmetro de 21 polegadas."
+      - "Suspensões de longo curso absorvem impactos duros sem dar fim de curso frequente."
+      - "Posição de pilotagem em pé ergonômica com guidão alto e pedaleiras largas."
+    vulnerabilidades_na_expedicao:
+      - "Peso em ordem de marcha elevado (205 a 240 kg) torna quedas em areia fofa cansativas para reerguer."
+      - "Pneus com câmara (alguns modelos) exigem espátulas e desmontagem de roda para reparar furos."
+    conexoes:
+      terrenos_ideais: ["serra_da_canastra", "ruta_40_patagonia", "jalapao"]
+      calibragem_recomendada_psi:
+        asfalto_com_bagagem: 36
+        terra_e_pedras: 24
+        areia_fofa: 18
+
+  - id: "big_trail_aro_19_estradeira"
+    categoria: "Maxi Trail de Longa Distância (Aro 19 Dianteiro)"
+    modelos_referencia: ["BMW R 1250 GS / 1300 GS", "Triumph Tiger 1200 GT", "Suzuki V-Strom 1050", "Ducati Multistrada V4"]
+    aro_dianteiro_polegadas: 19
+    aro_traseiro_polegadas: 17
+    curso_suspensao_mm: "190 a 210 mm"
+    transmissao_final: "Eixo Cardã ou Corrente reforçada"
+    autonomia_tanque_km: "350 a 550 km (versões Adventure)"
+    capacidade_carga_kg: 230
+    pontos_fortes:
+      - "Conforto aerodinâmico soberbo para cruzar 800 a 1.000 km por dia em rodovias."
+      - "Eixo cardã elimina a necessidade de lubrificação e ajuste de tensão diários na poeira/chuva."
+      - "Roda raiada sem câmara (tubeless) permite conserto de furo de pneu em 3 minutos com macarrão."
+    vulnerabilidades_na_expedicao:
+      - "Largura do motor boxer ou carenagens exige cuidado em trilhas estreitas com barrancos."
+      - "Peso muito elevado para trilhas técnicas de pedra solta ou lamaçal profundo."
+    conexoes:
+      terrenos_ideais: ["serra_do_rio_do_rastro", "ruta_40_patagonia"]
+      calibragem_recomendada_psi:
+        asfalto_com_bagagem: 38
+        ripio_compacto: 28
+
+  - id: "trail_monocilindrica_leve"
+    categoria: "Trail Leve / Média Monocilíndrica"
+    modelos_referencia: ["Royal Enfield Himalayan 450", "Honda Tornado 300F", "Yamaha Lander 250", "KTM 390 Adventure"]
+    aro_dianteiro_polegadas: 21
+    aro_traseiro_polegadas: 17
+    curso_suspensao_mm: "200 a 220 mm"
+    transmissao_final: "Corrente simples"
+    autonomia_tanque_km: "300 a 400 km"
+    capacidade_carga_kg: 160
+    pontos_fortes:
+      - "Peso leve (140 a 180 kg) permite levantar a moto sozinho facilmente mesmo em areia fofa."
+      - "Mecânica simples que qualquer oficina de beira de estrada no interior do Brasil consegue reparar."
+      - "Baixo consumo de combustível (28 a 35 km/l)."
+    vulnerabilidades_na_expedicao:
+      - "Velocidade de cruzeiro limitada (100 a 115 km/h), exigindo paciência em retas longas de asfalto."
+      - "Menor proteção aerodinâmica contra chuva e vento frio contínuo."
+    conexoes:
+      terrenos_ideais: ["jalapao", "serra_da_canastra"]
+
+  - id: "veiculo_4x4_overlanding"
+    categoria: "Veículo 4x4 com Reduzida e Bloqueio"
+    modelos_referencia: ["Toyota Hilux / SW4", "Troller T4", "Suzuki Jimny Sierra", "Mitsubishi Pajero Full"]
+    tracao: "4x2 Traseira / 4x4 High / 4x4 Low (Reduzida)"
+    recursos_obrigatorios: ["Bloqueio de diferencial traseiro", "Snorkel de admissão", "Guincho elétrico 9.500 lbs"]
+    pneus_recomendados: "All-Terrain (A/T) com laterais reforçadas (3 camadas de lona) ou Mud-Terrain (M/T)"
+    pontos_fortes:
+      - "Capacidade de carga superior para levar água potável, geladeira 12V, estepe duplo e barraca de teto."
+      - "Segurança para transpor alagados com snorkel acima da linha do capô."
+    vulnerabilidades_na_expedicao:
+      - "Largura e raio de giro impedem passagens em trilhas fechadas de moto."
+      - "Alto consumo em modo 4L em terrenos de atoleiro contínuo."
+    conexoes:
+      terrenos_ideais: ["serra_da_canastra", "jalapao", "serra_do_rio_do_rastro"]

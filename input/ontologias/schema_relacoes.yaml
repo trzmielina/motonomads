@@ -1,0 +1,43 @@
+# Schema de Relacionamentos do Grafo Semântico MotoNomads
+# Define os tipos de arestas e conexões entre as entidades do universo de viagem e mototurismo.
+
+relacoes_semanticas:
+  - id: "passa_por"
+    origem: "Rota"
+    destino: "Destino / Povoado / Ponto Geográfico"
+    descricao: "Indica que o traçado cruza ou toca determinada localidade geográfica."
+
+  - id: "exige_equipamento"
+    origem: "Rota / Destino / Terreno / Clima"
+    destino: "Equipamento / Ferramental"
+    descricao: "Equipamento técnico indispensável para segurança ou sobrevivência na situação."
+
+  - id: "veiculo_recomendado"
+    origem: "Rota / Terreno"
+    destino: "Motocicleta / Veículo 4x4"
+    descricao: "Configuração mecânica e porte de veículo ideal para vencer o desafio."
+
+  - id: "tecnica_de_pilotagem"
+    origem: "Terreno / Clima / Curvas"
+    destino: "Pilotagem"
+    descricao: "Procedimento físico, controle de dinâmica e condução correto para o piso."
+
+  - id: "risco_critico"
+    origem: "Destino / Clima / Terreno"
+    destino: "Segurança / Imprevistos"
+    descricao: "Fator de perigo real que exige atenção do piloto (neblina, falta de combustível, pedras soltas, degelo)."
+
+  - id: "cidade_base_de_apoio"
+    origem: "Destino / Rota"
+    destino: "Logística / Hospedagem"
+    descricao: "Município com infraestrutura de oficina, hotelaria, combustível e socorro antes do trecho remoto."
+
+  - id: "gastronomia_tipica"
+    origem: "Destino / Região"
+    destino: "Gastronomia / Cultura"
+    descricao: "Prato vernacular, receita tradicional ou experiência culinária emblemática do trajeto."
+
+  - id: "caso_real_eduardo"
+    origem: "Destino / Equipamento / Erro / Rota"
+    destino: "Histórias / Vivência"
+    descricao: "História concreta vivida pelo Eduardo Generali que serve de evidência e prova prática para o leitor."
