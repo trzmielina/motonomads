@@ -61,15 +61,21 @@ class ToneMatrixEvaluator:
                 f"Palavras recomendadas a incorporar: {', '.join(expected_keywords)}"
             )
 
-        # 3. Análise de Ritmo e Extensão Média de Frases
+        # 3. Análise de Ritmo, Fluidez e Extensão de Frases
         sentences = [s.strip() for s in re.split(r"[.!?]+", text) if len(s.strip()) > 5]
         if sentences:
             avg_words_per_sentence = sum(len(s.split()) for s in sentences) / len(sentences)
-            if avg_words_per_sentence > 25:
+            if avg_words_per_sentence > 35:
                 deductions += 10
                 findings.append(
-                    f"Frases excessivamente longas (média de {avg_words_per_sentence:.1f} palavras). "
-                    "Quebre em orações mais diretas para manter o ritmo expedicionário dinâmico."
+                    f"Frases excessivamente longas e convolutas (média de {avg_words_per_sentence:.1f} palavras). "
+                    "Pontue melhor para manter a leitura agradável e sem fôlego curto."
+                )
+            elif avg_words_per_sentence < 12:
+                deductions += 10
+                findings.append(
+                    f"Texto excessivamente truncado e telegráfico (média de {avg_words_per_sentence:.1f} palavras por frase). "
+                    "Una as orações com conectivos e pontuação fluida para resgatar a cadência de conversa natural de Eduardo Generali."
                 )
         else:
             avg_words_per_sentence = 0
