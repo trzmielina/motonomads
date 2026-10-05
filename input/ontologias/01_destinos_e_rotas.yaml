@@ -135,7 +135,7 @@ destinos_e_rotas:
     severidade: "Extrema em altitude (ar rarefeito a 4.800m, aridez extrema com umidade <10% e amplitude térmica de 0°C a 30°C)"
     melhor_epoca: "Março a Maio e Setembro a Novembro (meia-estação com ventos moderados e sem o 'inverno altiplânico')"
     conexoes:
-      veiculos: ["bmw_r1300gs_touring", "bmw_r1250gs_adventure", "big_trail_aro_19_21"]
+      veiculos: ["royal_enfield_himalayan_450_alugada_argentina", "trail_media_aro_21_450cc"]
       equipamentos: ["mochila_hidratacao_termica_3l", "conjunto_cordura_multicamadas_com_respiro", "segunda_pele_termica_e_respiravel", "viseira_solar_uv_protecao_extrema", "colirio_lubrificante_e_hidratante_nasal"]
       pilotagem: ["respeito_ao_ar_rarefeito_e_potencia_reduzida", "pilotagem_em_pe_ripio_solto", "frenagem_motor_cuestas_íngremes", "aceleracao_progressiva_areia_vulcânica"]
       riscos: ["soroche_mal_de_altitude_hipoxia", "amplitude_termica_congelamento_madrugada", "desidratacao_severa_ar_seco", "vento_branco_e_rajadas_nos_salares"]
