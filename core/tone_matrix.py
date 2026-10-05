@@ -13,8 +13,9 @@ class ToneMatrixEvaluator:
 
     def __init__(self, config_path: str = "config/tone_of_voice.yaml"):
         self.config = self._load_config(config_path)
-        self.forbidden_terms = self.config.get("forbidden_terms", [])
-        self.recommended_replacements = self.config.get("recommended_replacements", {})
+        self.config = self._load_config(config_path)
+        self.forbidden_terms = self.config.get("forbidden_cliches", self.config.get("forbidden_terms", []))
+        self.oral_connectors = self.config.get("oral_connectors", {}).get("always_use_naturally", [])
         self.pillars = self.config.get("pillars", {})
 
     def _load_config(self, path: str) -> Dict[str, Any]:
@@ -36,16 +37,25 @@ class ToneMatrixEvaluator:
             if term.lower() in text_lower:
                 forbidden_found.append(term)
                 deductions += 10
-                findings.append(f"Clichê detectado: '{term}'. Substitua por descrição sensorial ou técnica factual.")
+                findings.append(f"Clichê detectado: '{term}'. Substitua pela voz autêntica e sensorial do Eduardo Generali.")
 
-        # 2. Checagem de Jargões do Pilar
+        # 2. Checagem de Conectores de Oralidade Naturais do Eduardo
+        connectors_found = [c for c in self.oral_connectors if c.lower().strip("...") in text_lower]
+        if len(connectors_found) < 2:
+            deductions += 10
+            findings.append(
+                "Texto soando excessivamente acadêmico ou impessoal. Incorpore conectores naturais do Eduardo "
+                "(ex: 'Na verdade...', 'Para mim...', 'Minha dica é...', 'Por exemplo...', 'Faz muita diferença', 'Boa estrada sempre!')."
+            )
+
+        # 3. Checagem de Jargões do Pilar
         pillar_info = self.pillars.get(pillar_key, {})
         expected_keywords = pillar_info.get("keywords", [])
         keywords_present = [kw for kw in expected_keywords if kw.lower() in text_lower]
 
         jargon_ratio = len(keywords_present) / max(len(expected_keywords), 1)
-        if jargon_ratio < 0.3:
-            deductions += 15
+        if jargon_ratio < 0.25:
+            deductions += 10
             findings.append(
                 f"Baixa densidade de vocabulário específico do pilar '{pillar_key}'. "
                 f"Palavras recomendadas a incorporar: {', '.join(expected_keywords)}"

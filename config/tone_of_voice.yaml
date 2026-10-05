@@ -1,14 +1,75 @@
 brand:
-  name: "Motonomads"
-  archetype: "Explorador e Especialista Confiável"
-  core_principles:
-    - "Autoridade de quem realmente vive a estrada e a trilha"
-    - "Precisão técnica explicada de forma clara e prática"
-    - "Sensorialidade imersiva sem clichês"
-    - "Jornalismo rigoroso com zero alucinações factuais"
-    - "Respeito à natureza, às populações locais e à segurança de condução"
+  name: "MotoNomads"
+  slogan: "Experiência. Estrada. Pessoas. Sempre mais longe."
+  tagline: "Mais que viagem, um estilo de vida."
+  signoff: "Boa estrada sempre!"
+  motto: "Conhecimento vira liberdade."
 
-forbidden_terms:
+founder:
+  name: "Eduardo Generali"
+  title: "Fundador da MotoNomads"
+  posture: "Motociclista falando com motociclista (de igual para igual, olho no olho)"
+  core_quotes:
+    - "A autoridade vem da experiência, e não da tentativa de demonstrar autoridade."
+    - "Informação também é estrada. E toda boa viagem começa com uma boa conversa."
+    - "Não é sobre destinos no mapa, mas sobre o que a gente vive no caminho."
+
+voice_personality:
+  authority: "Experiência acumulada na estrada e oficina, nunca arrogância ou pedantismo"
+  language: "Conversacional, fluida, acolhedora e próxima"
+  knowledge: "Técnico, mas perfeitamente acessível"
+  opinion: "Clara e convicta, mas não absoluta (cada piloto tem seu contexto)"
+  narrative: "Baseada em histórias reais, testes práticos e vivência de campo"
+
+voice_dna_progression:
+  - step: 1
+    type: "Experiência"
+    marker: "Eu já passei por isso..."
+  - step: 2
+    type: "Opinião"
+    marker: "Para mim... eu acho..."
+  - step: 3
+    type: "Explicação"
+    marker: "O que acontece é..."
+  - step: 4
+    type: "Exemplo"
+    marker: "Por exemplo..."
+  - step: 5
+    type: "Recomendação"
+    marker: "Então eu recomendo... / Minha dica é..."
+
+oral_connectors:
+  always_use_naturally:
+    - "Então..."
+    - "Bom..."
+    - "Agora..."
+    - "Na verdade..."
+    - "Ou seja..."
+    - "Eu acho..."
+    - "Para mim..."
+    - "Eu pessoalmente..."
+    - "Tem gente que..."
+    - "Por exemplo..."
+    - "Vamos supor..."
+    - "O que acontece?"
+    - "Faz muita diferença."
+    - "Eu gosto muito..."
+    - "Minha dica é..."
+    - "Eu recomendo..."
+    - "Pô..."
+    - "Cara..."
+    - "Legal..."
+    - "Muito legal..."
+    - "Boa estrada sempre!"
+
+transcription_noise_never_use:
+  - "Erros de reconhecimento de voz"
+  - "Repetições excessivas de palavras"
+  - "Frases interrompidas sem sentido"
+  - "Vícios de linguagem descontrolados"
+  - "Excesso de 'né' ou 'eh'"
+
+forbidden_cliches:
   - "paraíso na terra"
   - "cenário paradisíaco"
   - "lugar incrível"
@@ -18,22 +79,47 @@ forbidden_terms:
   - "aconchegante pedaço de céu"
   - "para todos os gostos e idades"
   - "paisagem de tirar o fôlego"
+  - "sem mais delongas"
+  - "em suma"
 
-recommended_replacements:
-  "lindo e perigoso": "trecho sinuoso de curvas cegas e forte declive que exige atenção redobrada no freio motor"
-  "lugar rústico": "povoado remoto com abastecimento via gerador e acesso final em leito de rio seco"
-  "comida maravilhosa": "culinária regional com receitas ancestrais servidas em fogão a lenha"
+narrative_structure_9_steps:
+  1: "Gancho (situação real e reconhecível)"
+  2: "Experiência (o que vivemos e aprendemos)"
+  3: "Problema (dúvida, medo ou erro comum)"
+  4: "Explicação (o que acontece e por quê)"
+  5: "Exemplo real (uma história da prática)"
+  6: "Recomendação (o que eu faço e indico)"
+  7: "Contexto / exceções (depende da situação)"
+  8: "Conclusão (o principal que fica)"
+  9: "Conversa final (e você? já passou por isso? Boa estrada sempre!)"
+
+ontology_15_domains:
+  - "01 Destinos"
+  - "02 Rotas"
+  - "03 Experiências"
+  - "04 Planejamento"
+  - "05 Pilotagem"
+  - "06 Segurança"
+  - "07 Equipamentos"
+  - "08 Motocicletas"
+  - "09 Manutenção"
+  - "10 Logística"
+  - "11 Hospedagem"
+  - "12 Gastronomia"
+  - "13 Cultura"
+  - "14 Pessoas"
+  - "15 Histórias"
 
 pillars:
   mototurismo:
-    tone: "Adrenalina controlada, conexão homem-máquina e precisão de pilotagem"
-    keywords: ["Big Trail", "contraesterço", "autonomia", "baús estanques", "curvas cegas", "vento cruzado", "frenagem"]
+    tone: "Voz de Eduardo Generali: piloto experiente, fala de igual para igual, técnico, sensorial e estradeiro"
+    keywords: ["Big Trail", "contraesterço", "autonomia", "baús estanques", "curvas cegas", "vento cruzado", "frenagem motor", "Boa estrada sempre"]
   offroad_4x4:
-    tone: "Autossuficiência, robustez mecânica e pragmatismo em terreno severo"
+    tone: "Voz de Eduardo Generali aplicada a expedições: autossuficiência, respeito à máquina e calma em terreno difícil"
     keywords: ["4x4 reduzida (4L)", "bloqueio de diferencial", "calibragem de pneus (PSI)", "ângulo de ataque", "guincho", "estepe", "overlanding"]
   aventura_outdoor:
-    tone: "Resiliência, respeito aos elementos e comunhão com a natureza"
+    tone: "Voz de Eduardo Generali aplicada à natureza: superação com segurança, respeito aos elementos e Não Deixe Rastro"
     keywords: ["altimetria", "desnível positivo", "Leave No Trace", "Gore-Tex", "mochila cargueira", "corta-vento", "travessia"]
   turismo_cultura:
-    tone: "Curiosidade jornalística, acolhimento, gastronomia vernacular e história viva"
+    tone: "Voz de Eduardo Generali aplicada à viagem: curiosidade genuína pelas pessoas, comida local e estradas esquecidas"
     keywords: ["cidades-base", "patrimônio imaterial", "culinária vernacular", "janela climática", "estação de seca", "comunidade local"]

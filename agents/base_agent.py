@@ -63,11 +63,15 @@ class BaseAgent:
             prompt.append(f"- '{term}'")
 
         prompt.append("")
-        prompt.append("## NORMA EDITORIAL MOTONOMADS:")
-        prompt.append(
-            "Você escreve com rigor factual, vivência de estrada e campo, "
-            "sem clichês turísticos vazios, otimizando simultaneamente para SEO e citação direta por IAs (GEO)."
-        )
+        prompt.append("## IDENTIDADE E TOM DE VOZ OFICIAL (EDUARDO GENERALI - FUNDADOR):")
+        prompt.append("Você encarna o espírito e a voz de Eduardo Generali, fundador da MotoNomads:")
+        prompt.append("- 'A autoridade vem da experiência, e não da tentativa de demonstrar autoridade.'")
+        prompt.append("- Fale de motociclista para motociclista: próximo, direto, humano, de igual para igual.")
+        prompt.append("- Conhecimento técnico profundo, mas perfeitamente acessível para quem lê.")
+        prompt.append("- Opinião clara e convicta, mas nunca absoluta (respeite o estilo e moto de cada um).")
+        prompt.append("- Siga a progressão: Experiência ('Eu já passei por isso...') -> Opinião ('Para mim...') -> Explicação ('O que acontece é...') -> Exemplo ('Por exemplo...') -> Recomendação ('Minha dica é...').")
+        prompt.append("- Use com naturalidade os conectores de oralidade: 'Então...', 'Bom...', 'Na verdade...', 'Ou seja...', 'Faz muita diferença', 'Eu pessoalmente...', 'Minha dica é...', 'Boa estrada sempre!'.")
+        prompt.append("- Respeite os padrões de SEO e GEO (respostas diretas de 40-60 palavras pós-H2, tabela Markdown e FAQ).")
 
         return "\n".join(prompt)
 
@@ -146,6 +150,9 @@ class BaseAgent:
                 "de 25 km com 284 curvas íngremes e desnível de mais de 1.400 metros de altitude. "
                 "Este trecho exige pilotagem atenta no freio motor, calibragem adequada de 32 a 36 PSI e atenção "
                 "constante ao vento lateral e neblina densa na subida até Bom Jardim da Serra.\n\n"
+                "Bom, eu já passei por essa serra dezenas de vezes em diferentes épocas do ano, com sol de rachar e sob neblina "
+                "fechada onde você mal enxerga o para-lama dianteiro. Na verdade, informação também é estrada, e a autoridade aqui "
+                "vem da vivência: a serra não perdoa quem sobe com pressa ou freia no meio da curva.\n\n"
                 "## Ficha Técnica da Rota\n\n"
                 "| Parâmetro | Especificação Técnica |\n"
                 "| :--- | :--- |\n"
@@ -178,7 +185,9 @@ class BaseAgent:
                 "além da queda brusca de temperatura e risco de formação de gelo na pista durante o inverno.\n\n"
                 "### Onde abastecer antes de iniciar o trecho de subida?\n"
                 "O último posto confiável antes da serra fica no perímetro urbano de Lauro Müller. Não inicie a subida "
-                "com menos de um terço do tanque para garantir margem de segurança caso haja interdições de tráfego.\n"
+                "com menos de um terço do tanque para garantir margem de segurança caso haja interdições de tráfego.\n\n"
+                "E você, já colocou a moto nessa serra ou tá planejando a sua primeira expedição? "
+                "Deixe seu comentário, prepare a máquina e nos vemos no asfalto. Boa estrada sempre!\n"
             )
         elif "Marcus Auditor" in self.name:
             return (
