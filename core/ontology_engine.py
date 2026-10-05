@@ -87,6 +87,15 @@ class OntologyEngine:
             "kotor": "adriatico_costa_dalmata_balcas",
             "jadranska magistrala": "adriatico_costa_dalmata_balcas",
             "plitvice": "adriatico_costa_dalmata_balcas",
+            "atacama": "deserto_atacama_puna_andes",
+            "deserto do atacama": "deserto_atacama_puna_andes",
+            "san pedro de atacama": "deserto_atacama_puna_andes",
+            "puna": "deserto_atacama_puna_andes",
+            "puna argentina": "deserto_atacama_puna_andes",
+            "salta": "deserto_atacama_puna_andes",
+            "cafayate": "deserto_atacama_puna_andes",
+            "paso de jama": "deserto_atacama_puna_andes",
+            "cuesta de lipan": "deserto_atacama_puna_andes",
         }
         for kw, dest_id in palavras_chave.items():
             if kw in text_lower:

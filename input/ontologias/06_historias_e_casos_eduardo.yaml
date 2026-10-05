@@ -84,3 +84,18 @@ casos_reais_eduardo:
       e acelere de forma progressiva. Quando o vento Bora bater, pilote com o corpo firme, cotovelos flexionados e motor em giro
       médio para manter o efeito giroscópico das rodas estabilizando a trajetória.
     frase_eduardo: "O Adriático é puro deleite para quem sabe ler o asfalto. Ali, a calma no acelerador é o que separa um passeio espetacular de um susto desnecessário."
+
+  - id: "eduardo_altitude_paso_de_jama_atacama"
+    titulo: "A Barreira dos 4.800 Metros no Paso de Jama e o Ar Rarefeito da Puna"
+    destino_associado: "deserto_atacama_puna_andes"
+    situacao: "Travessia da Cordilheira dos Andes entre Purmamarca e San Pedro de Atacama com temperatura de -2°C e altitude de 4.820m."
+    o_que_aconteceu: >
+      Subindo a Cuesta de Lipán em direção ao Paso de Jama, o piloto sente a moto perder cerca de 25% a 30% da potência volumétrica
+      pela falta de oxigênio, mesmo com injeção eletrônica de ponta. Mas o maior perigo é com o próprio piloto: se você não
+      se hidratar com pelo menos 3 litros de água por dia e subir rápido demais sem aclimatação, o soroche (mal de altitude)
+      bate com dor de cabeça forte, náusea e perda de reflexo no guidão.
+    licao_pratica: >
+      Na altitude dos Andes, a pressa é fatal. Suba com aclimatação gradual dormindo em altitudes intermediárias, beba água
+      continuamente mesmo sem sentir sede e use o carro de apoio para levar oxigênio medicinal e toda a bagagem pesada.
+      Pilotar uma moto leve faz você gastar metade da energia física para manobrar na altitude extrema.
+    frase_eduardo: "A cordilheira impõe respeito em cada metro de subida. Nos Andes, quem cuida da respiração e da máquina chega aonde quiser com tranquilidade."

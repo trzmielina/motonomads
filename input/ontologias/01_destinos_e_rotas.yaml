@@ -121,3 +121,24 @@ destinos_e_rotas:
       cidades_base: ["liubliana", "zagrebe", "sarajevo", "mostar", "orebic", "dubrovnik", "kotor", "hvar", "split", "zadar"]
       gastronomia: ["ostras_frescas_de_ston", "azeites_trufados_istria", "peixe_grelhado_riba_na_grade", "vinho_tinto_dingac_peljesac", "cevapi_tradicional"]
       caso_eduardo: "eduardo_vento_bora_jadranska_magistrala"
+
+  - id: "deserto_atacama_puna_andes"
+    nome: "Rota dos Salares, Puna e Deserto do Atacama (Salta a San Pedro de Atacama)"
+    tipo: "Deserto Hiperárido de Altitude, Cordilheira dos Andes e Salares"
+    estado_pais: "Chile e Argentina"
+    cidades_limite: ["Salta", "Purmamarca", "San Pedro de Atacama", "Cafayate", "Susques", "San Antonio de los Cobres"]
+    extensao_km: 2200
+    curvas_totais: 380
+    altimetria_minima_m: 1200
+    altimetria_maxima_m: 4820
+    tipo_pavimento: "Asfalto de montanha na RN52 / Paso de Jama, rípio andino firme nos salares e areia fina nos vales desérticos"
+    severidade: "Extrema em altitude (ar rarefeito a 4.800m, aridez extrema com umidade <10% e amplitude térmica de 0°C a 30°C)"
+    melhor_epoca: "Março a Maio e Setembro a Novembro (meia-estação com ventos moderados e sem o 'inverno altiplânico')"
+    conexoes:
+      veiculos: ["bmw_r1300gs_touring", "bmw_r1250gs_adventure", "big_trail_aro_19_21"]
+      equipamentos: ["mochila_hidratacao_termica_3l", "conjunto_cordura_multicamadas_com_respiro", "segunda_pele_termica_e_respiravel", "viseira_solar_uv_protecao_extrema", "colirio_lubrificante_e_hidratante_nasal"]
+      pilotagem: ["respeito_ao_ar_rarefeito_e_potencia_reduzida", "pilotagem_em_pe_ripio_solto", "frenagem_motor_cuestas_íngremes", "aceleracao_progressiva_areia_vulcânica"]
+      riscos: ["soroche_mal_de_altitude_hipoxia", "amplitude_termica_congelamento_madrugada", "desidratacao_severa_ar_seco", "vento_branco_e_rajadas_nos_salares"]
+      cidades_base: ["salta", "purmamarca", "san_pedro_de_atacama", "cafayate", "susques"]
+      gastronomia: ["empanadas_saltenas_cortadas_a_faca", "cordeiro_andino_ao_disco", "vinhos_torrontes_malbec_de_altitude", "quinua_real_com_rica_rica", "lomo_de_lhama_grelhado"]
+      caso_eduardo: "eduardo_altitude_paso_de_jama_atacama"
