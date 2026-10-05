@@ -5,11 +5,14 @@ Permite selecionar artigos base (URL ou arquivo), escolher o pilar especialista 
 
 import os
 import sys
-from rich.console import Console
-from rich.panel import Panel
-from rich.table import Table
-from rich.prompt import Prompt, Confirm
-from rich import print as rprint
+try:
+    from rich.console import Console
+    from rich.panel import Panel
+    from rich.table import Table
+    from rich.prompt import Prompt
+    HAS_RICH = True
+except ImportError:
+    HAS_RICH = False
 
 # Adicionar pasta raiz ao path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -17,7 +20,63 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from core.orchestrator import MotonomadsOrchestrator
 
 
-console = Console()
+if HAS_RICH:
+    console = Console()
+else:
+    class DummyConsole:
+        def print(self, *args, **kwargs):
+            text = " ".join(str(a) for a in args)
+            for tag in ["[bold orange1]", "[/bold orange1]", "[bold cyan]", "[/bold cyan]",
+                        "[bold yellow]", "[/bold yellow]", "[bold green]", "[/bold green]",
+                        "[bold white]", "[/bold white]", "[bold red]", "[/bold red]",
+                        "[cyan]", "[/cyan]", "[yellow]", "[/yellow]", "[green]", "[/green]", "[red]", "[/red]", "[dim]", "[/dim]"]:
+                text = text.replace(tag, "")
+            print(text)
+
+        def status(self, *args, **kwargs):
+            from contextlib import nullcontext
+            return nullcontext()
+
+    class DummyPrompt:
+        @staticmethod
+        def ask(prompt_text, choices=None, default=None):
+            clean_prompt = prompt_text
+            for tag in ["[bold cyan]", "[/bold cyan]", "[bold yellow]", "[/bold yellow]", "[bold white]", "[/bold white]"]:
+                clean_prompt = clean_prompt.replace(tag, "")
+            msg = f"{clean_prompt} "
+            if choices:
+                msg += f"({', '.join(choices)}) "
+            if default:
+                msg += f"[{default}]: "
+            else:
+                msg += ": "
+            val = input(msg).strip()
+            return val if val else (default or "")
+
+    class DummyTable:
+        def __init__(self, title="", **kwargs):
+            self.title = title
+            self.rows = []
+        def add_column(self, *args, **kwargs): pass
+        def add_row(self, *args): self.rows.append(args)
+        def __str__(self):
+            lines = [f"\n--- {self.title} ---"]
+            for r in self.rows:
+                lines.append(" | ".join(str(x) for x in r))
+            return "\n".join(lines)
+
+    class DummyPanel:
+        def __init__(self, content, title="", subtitle="", **kwargs):
+            self.content = content
+            self.title = title
+            self.subtitle = subtitle
+        def __str__(self):
+            return f"\n=== {self.title} ===\n{self.content}\n=== {self.subtitle} ==="
+
+    console = DummyConsole()
+    Prompt = DummyPrompt()
+    Table = DummyTable
+    Panel = DummyPanel
 
 
 def show_banner():
