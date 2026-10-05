@@ -12,6 +12,7 @@ from core.crawler import ArticleExtractor
 from core.tone_matrix import ToneMatrixEvaluator
 from core.geo_optimizer import GeoSeoOptimizer
 from core.ontology_engine import OntologyEngine
+from core.html_generator import MotonomadsHtmlGenerator
 
 from agents.diego_jornalista import DiegoJornalista
 from agents.marina_estrategista import MarinaEstrategista
@@ -32,6 +33,7 @@ class MotonomadsOrchestrator:
         self.tone_evaluator = ToneMatrixEvaluator(os.path.join(base_dir, "config/tone_of_voice.yaml"))
         self.geo_optimizer = GeoSeoOptimizer(os.path.join(base_dir, "config/geo_seo_guidelines.yaml"))
         self.ontology = OntologyEngine(os.path.join(base_dir, "input/ontologias"))
+        self.html_generator = MotonomadsHtmlGenerator()
 
         # Carregar time de agentes
         self.diego = DiegoJornalista()
@@ -174,10 +176,24 @@ class MotonomadsOrchestrator:
         with open(auditoria_path, "w", encoding="utf-8") as f:
             f.write(relatorio_auditoria)
 
+        # Gerar Saída Visual em HTML
+        html_path = os.path.join(output_dir, f"{filename_base}.html")
+        self.html_generator.generate_html_report(
+            article_md=artigo_harmonizado,
+            audit_md=relatorio_auditoria,
+            output_file_path=html_path,
+            pillar=pillar,
+            target_keyword=target_keyword,
+            ontological_data=ontological_data,
+            tone_score=local_tone_audit.get("score", 90),
+            geo_score=local_geo_audit.get("score", 90),
+        )
+
         return {
             "status": "success",
             "article_file": artigo_path,
             "audit_file": auditoria_path,
+            "html_file": html_path,
             "pillar": pillar,
             "specialist": specialist_name,
             "article_preview": artigo_harmonizado[:500] + "...",

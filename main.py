@@ -40,6 +40,7 @@ def main():
             print("✅ MATÉRIA GERADA E AUDITADA COM SUCESSO!")
             print(f"📄 Artigo: {result['article_file']}")
             print(f"📋 Auditoria: {result['audit_file']}")
+            print(f"🌐 Painel Visual HTML: {result['html_file']}")
             print(f"Score Tom de Voz: {result['local_tone_score']}/100")
             print(f"Score GEO/SEO: {result['local_geo_score']}/100")
             print("=" * 60)

@@ -172,6 +172,7 @@ def main_menu():
                 console.print("[bold green]✅ MATÉRIA PROCESSADA E AUDITADA COM SUCESSO![/bold green]")
                 console.print(f"📄 [bold white]Artigo final salvo em:[/bold white] [cyan]{result['article_file']}[/cyan]")
                 console.print(f"📋 [bold white]Auditoria salva em:[/bold white] [cyan]{result['audit_file']}[/cyan]")
+                console.print(f"🌐 [bold white]Painel Visual HTML em:[/bold white] [bold green]{result['html_file']}[/bold green]")
                 console.print(f"🏍️ [bold white]Especialista que redigiu:[/bold white] {result['specialist']}")
                 console.print(f"📊 [bold white]Score Tom de Voz (algorítmico):[/bold white] [yellow]{result['local_tone_score']}/100[/yellow]")
                 console.print(f"🎯 [bold white]Score GEO/SEO (algorítmico):[/bold white] [yellow]{result['local_geo_score']}/100[/yellow]")
