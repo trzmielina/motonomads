@@ -27,8 +27,10 @@ credentials.json
 *.swp
 *.swo
 
-# Output generated files (preserve folder with .gitkeep)
-output/*
+# Output generated files (preserva artigos finais e painéis visuais no git)
+output/temp_*
+!output/*.html
+!output/*.md
 !output/.gitkeep
 temp/
 logs/

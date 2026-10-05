@@ -79,3 +79,24 @@ destinos_e_rotas:
       cidades_base: ["bariloche", "el_chalten", "el_calafate", "gobernador_gregores"]
       gastronomia: ["cordeiro_patagonico_ao_fogo_de_chao", "empanadas_saltenhas", "cervejas_artesanais_sul"]
       caso_eduardo: "eduardo_vento_patagonico_rajada"
+
+  - id: "escandinavia_fiordes_noruega"
+    nome: "Rota dos Fiordes e Costa Norueguesa (Copenhague a Trondheim)"
+    tipo: "Costeira Nórdica, Passos de Montanha e Travessias Náuticas"
+    estado_pais: "Dinamarca, Suécia e Noruega"
+    cidades_limite: ["Copenhague", "Gotemburgo", "Oslo", "Sogndal", "Geiranger", "Kristiansund", "Trondheim"]
+    extensao_km: 2000
+    curvas_totais: 450
+    altimetria_minima_m: 0
+    altimetria_maxima_m: 1038
+    tipo_pavimento: "Asfalto ranhurado frio de alta fricção, pontes marinhas expostas, túneis úmidos e rampas metálicas de ferryboats"
+    severidade: "Alta (baixas temperaturas, chuvas súbitas contínuas, neblina em passos alpinos e túneis gelados)"
+    melhor_epoca: "Junho a Agosto (Sol da Meia-Noite, Trollstigen liberada do degelo e estradas 100% abertas)"
+    conexoes:
+      veiculos: ["bmw_r1300gs_touring", "bmw_r1250gs_adventure", "big_trail_crossover_1000"]
+      equipamentos: ["conjunto_laminado_goretex_pro_3l", "pinlock_120_antiembacante", "luvas_aquecidas_eletricas", "segunda_pele_merino_260g", "botas_goretex_touring"]
+      pilotagem: ["frenagem_motor_trollstigen", "embarque_ferry_tracao_reta", "cautela_diesel_entrada_tuneis", "inclinacao_vento_lateral_atlantico"]
+      riscos: ["hipotermia_por_roupa_encharcada", "escorregar_rampa_ferry_molhada", "animais_na_pista_renas_alces", "queda_termica_brusca_tuneis", "radares_velocidade_media_tolerancia_zero"]
+      cidades_base: ["copenhague", "gotemburgo", "oslo", "ullensvang", "sogndal", "geiranger", "kristiansund", "trondheim"]
+      gastronomia: ["salmao_artico_defumado_a_quente", "bacalhau_skrei_noruegues", "sopa_de_peixe_fiskesuppe", "queijo_marrom_brunost"]
+      caso_eduardo: "eduardo_nevoeiro_trollstigen_atlantico"

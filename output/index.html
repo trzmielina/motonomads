@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Editorial MotoNomads | Artigos & Relatórios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-deep: #0b0f19;
+            --bg-surface: #131c2e;
+            --border-subtle: rgba(255, 255, 255, 0.08);
+            --orange: #f97316;
+            --emerald: #10b981;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+        }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-deep);
+            color: var(--text-main);
+            padding: 40px 24px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 36px;
+            font-weight: 800;
+            color: #fff;
+        }
+        h1 span { color: var(--orange); }
+        p.subtitle {
+            color: var(--text-muted);
+            margin-top: 8px;
+            font-size: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .grid {
+            display: grid;
+            gap: 20px;
+        }
+        .article-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 14px;
+            padding: 24px 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+        .article-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(249, 115, 22, 0.4);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+        .card-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 6px;
+        }
+        .card-meta {
+            font-size: 13px;
+            color: var(--text-muted);
+            display: flex;
+            gap: 16px;
+        }
+        .scores {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+        .score-pill {
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--emerald);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            padding: 6px 12px;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 700;
+            font-family: 'Outfit', sans-serif;
+        }
+        .btn-view {
+            background: var(--orange);
+            color: #fff;
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            font-family: 'Outfit', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MOTO<span>NOMADS</span> 🏍️</h1>
+            <p class="subtitle">Central de Produção Editorial & Relatórios Visuais</p>
+        </header>
+
+        <div class="grid">
+            <a href="materia_viagem_de_moto_escandinavia.html" class="article-card" style="border-left: 4px solid var(--orange);">
+                <div>
+                    <div class="card-title">Viagem de Moto pela Escandinávia: O Guia Definitivo dos Fiordes ao Atlântico Norte</div>
+                    <div class="card-meta">
+                        <span>Pilar: Mototurismo Internacional 🏍️</span>
+                        <span>Formato: GEO & SEO Direct-Answer</span>
+                        <span>Voz: Eduardo Generali</span>
+                    </div>
+                </div>
+                <div class="scores">
+                    <span class="score-pill">Tom: 100/100</span>
+                    <span class="score-pill">GEO: 100/100</span>
+                    <span class="btn-view">Abrir Painel Visual →</span>
+                </div>
+            </a>
+
+            <a href="materia_conheça_a_serra_do_rio_do_rast_1791229353.html" class="article-card">
+                <div>
+                    <div class="card-title">Guia Definitivo: Serra do Rio do Rastro de Moto e 4x4</div>
+                    <div class="card-meta">
+                        <span>Pilar: Mototurismo Nacional 🏍️</span>
+                        <span>Formato: GEO & SEO Direct-Answer</span>
+                        <span>Voz: Eduardo Generali</span>
+                    </div>
+                </div>
+                <div class="scores">
+                    <span class="score-pill">Tom: 90/100</span>
+                    <span class="score-pill">GEO: 90/100</span>
+                    <span class="btn-view">Abrir Painel Visual →</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

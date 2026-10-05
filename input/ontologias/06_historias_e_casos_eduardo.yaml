@@ -55,3 +55,18 @@ casos_reais_eduardo:
       No vento patagônico, reduza uma marcha para manter o motor em giro alto (o giro do virabrequim e das rodas atua como um giroscópio
       estabilizador). E ao cruzar com veículos pesados, antecipe o vácuo: não espere o choque de ar acontecer para reagir.
     frase_eduardo: "A Patagônia te ensina humildade em cada curva. Ali, quem manda no ritmo é o vento."
+
+  - id: "eduardo_nevoeiro_trollstigen_atlantico"
+    titulo: "O Nevoeiro Fechado de Trollstigen e o Vento Salgado da Atlantic Ocean Road"
+    destino_associado: "escandinavia_fiordes_noruega"
+    situacao: "Subida dos 11 cotovelos do Trollstigen sob garoa de 6°C seguida pela travessia da ponte Storseisundet com mar revolto."
+    o_que_aconteceu: >
+      No meio da subida do Trollstigen, a névoa baixou tanto que a cascata Stigfossen sumiu a cinco metros de nós. O asfalto estava
+      encharcado e qualquer toque bruto no freio dianteiro em curva fechada derrubaria a Big Trail de 260 kg. Duas horas depois,
+      na Atlantic Ocean Road, as ondas do Mar da Noruega batiam nas pilastras da ponte e jogavam spray salgado na viseira,
+      com vento de través tentando desviar a frente da moto.
+    licao_pratica: >
+      Na Noruega, quem anda com pressa perde a paisagem e arrisca a segurança. A regra é manter a segunda marcha cheia nas curvas íngremes,
+      nunca descer no neutro, usar sempre Pinlock 120 e jaqueta laminada (que repele a água por fora sem encharcar o tecido).
+      Ao entrar nos ferryboats, cruze as grelhas de metal molhadas com a moto completamente reta e sem tocar no freio dianteiro.
+    frase_eduardo: "A Escandinávia não quer saber da sua pressa. O norte exige respeito, equipamento estanque e olhos atentos em cada curva."

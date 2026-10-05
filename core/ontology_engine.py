@@ -69,6 +69,13 @@ class OntologyEngine:
             "patagônia": "ruta_40_patagonia",
             "patagonia": "ruta_40_patagonia",
             "ruta 40": "ruta_40_patagonia",
+            "escandinávia": "escandinavia_fiordes_noruega",
+            "escandinavia": "escandinavia_fiordes_noruega",
+            "noruega": "escandinavia_fiordes_noruega",
+            "fiordes": "escandinavia_fiordes_noruega",
+            "trollstigen": "escandinavia_fiordes_noruega",
+            "geiranger": "escandinavia_fiordes_noruega",
+            "atlantic ocean road": "escandinavia_fiordes_noruega",
         }
         for kw, dest_id in palavras_chave.items():
             if kw in text_lower:
