@@ -1,0 +1,25 @@
+geo:
+  description: "Diretrizes de Generative Engine Optimization para citação por IA"
+  direct_answer_words_min: 40
+  direct_answer_words_max: 65
+  mandatory_table: true
+  table_columns:
+    - "Parâmetro"
+    - "Especificação Técnica"
+  faq_count_min: 4
+  faq_count_max: 6
+  required_entities:
+    - "Nomes de rodovias oficiais (ex: BR-101, RN-40, Estrada Real)"
+    - "Topônimos geográficos exatos (serras, vales, picos, parques nacionais)"
+    - "Modelos de motos e veículos de referência"
+    - "Especificações métricas (km, m de altitude, graus, PSI)"
+
+seo:
+  title_max_chars: 60
+  meta_description_chars_min: 140
+  meta_description_chars_max: 160
+  keyword_density_target: "1.2% - 1.8%"
+  subheading_frequency_words: 250
+  min_internal_links: 2
+  min_external_links: 2
+  slug_format: "kebab-case-sem-stopwords"

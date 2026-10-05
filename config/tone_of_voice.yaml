@@ -1,0 +1,39 @@
+brand:
+  name: "Motonomads"
+  archetype: "Explorador e Especialista Confiável"
+  core_principles:
+    - "Autoridade de quem realmente vive a estrada e a trilha"
+    - "Precisão técnica explicada de forma clara e prática"
+    - "Sensorialidade imersiva sem clichês"
+    - "Jornalismo rigoroso com zero alucinações factuais"
+    - "Respeito à natureza, às populações locais e à segurança de condução"
+
+forbidden_terms:
+  - "paraíso na terra"
+  - "cenário paradisíaco"
+  - "lugar incrível"
+  - "mergulhar de cabeça"
+  - "vale super a pena conferir"
+  - "segredo bem guardado"
+  - "aconchegante pedaço de céu"
+  - "para todos os gostos e idades"
+  - "paisagem de tirar o fôlego"
+
+recommended_replacements:
+  "lindo e perigoso": "trecho sinuoso de curvas cegas e forte declive que exige atenção redobrada no freio motor"
+  "lugar rústico": "povoado remoto com abastecimento via gerador e acesso final em leito de rio seco"
+  "comida maravilhosa": "culinária regional com receitas ancestrais servidas em fogão a lenha"
+
+pillars:
+  mototurismo:
+    tone: "Adrenalina controlada, conexão homem-máquina e precisão de pilotagem"
+    keywords: ["Big Trail", "contraesterço", "autonomia", "baús estanques", "curvas cegas", "vento cruzado", "frenagem"]
+  offroad_4x4:
+    tone: "Autossuficiência, robustez mecânica e pragmatismo em terreno severo"
+    keywords: ["4x4 reduzida (4L)", "bloqueio de diferencial", "calibragem de pneus (PSI)", "ângulo de ataque", "guincho", "estepe", "overlanding"]
+  aventura_outdoor:
+    tone: "Resiliência, respeito aos elementos e comunhão com a natureza"
+    keywords: ["altimetria", "desnível positivo", "Leave No Trace", "Gore-Tex", "mochila cargueira", "corta-vento", "travessia"]
+  turismo_cultura:
+    tone: "Curiosidade jornalística, acolhimento, gastronomia vernacular e história viva"
+    keywords: ["cidades-base", "patrimônio imaterial", "culinária vernacular", "janela climática", "estação de seca", "comunidade local"]

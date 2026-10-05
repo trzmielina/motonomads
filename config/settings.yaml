@@ -1,0 +1,22 @@
+app:
+  name: "Motonomads Redatores"
+  version: "1.0.0"
+  description: "Sistema editorial autônomo para produção, enriquecimento jornalístico e adaptação de matérias sobre Turismo, Mototurismo, 4x4 e Aventura com padrões GEO/SEO."
+
+llm:
+  provider: "openai"       # openai | anthropic | gemini
+  model: "gpt-4o"
+  temperature: 0.6
+  max_tokens: 4000
+
+paths:
+  input_dir: "input"
+  output_dir: "output"
+  data_dir: "data"
+  config_dir: "config"
+
+editorial:
+  default_language: "pt-BR"
+  target_word_count_min: 1500
+  target_word_count_max: 3000
+  min_audit_score_approval: 85
