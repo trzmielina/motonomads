@@ -76,6 +76,17 @@ class OntologyEngine:
             "trollstigen": "escandinavia_fiordes_noruega",
             "geiranger": "escandinavia_fiordes_noruega",
             "atlantic ocean road": "escandinavia_fiordes_noruega",
+            "adriático": "adriatico_costa_dalmata_balcas",
+            "adriatico": "adriatico_costa_dalmata_balcas",
+            "croácia": "adriatico_costa_dalmata_balcas",
+            "croacia": "adriatico_costa_dalmata_balcas",
+            "eslovênia": "adriatico_costa_dalmata_balcas",
+            "eslovenia": "adriatico_costa_dalmata_balcas",
+            "montenegro": "adriatico_costa_dalmata_balcas",
+            "dubrovnik": "adriatico_costa_dalmata_balcas",
+            "kotor": "adriatico_costa_dalmata_balcas",
+            "jadranska magistrala": "adriatico_costa_dalmata_balcas",
+            "plitvice": "adriatico_costa_dalmata_balcas",
         }
         for kw, dest_id in palavras_chave.items():
             if kw in text_lower:

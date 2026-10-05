@@ -100,3 +100,24 @@ destinos_e_rotas:
       cidades_base: ["copenhague", "gotemburgo", "oslo", "ullensvang", "sogndal", "geiranger", "kristiansund", "trondheim"]
       gastronomia: ["salmao_artico_defumado_a_quente", "bacalhau_skrei_noruegues", "sopa_de_peixe_fiskesuppe", "queijo_marrom_brunost"]
       caso_eduardo: "eduardo_nevoeiro_trollstigen_atlantico"
+
+  - id: "adriatico_costa_dalmata_balcas"
+    nome: "Rota da Costa do Adriático e Bálcãs (Liubliana a Kotor)"
+    tipo: "Costeira Mediterrânea, Serras Calcárias e Travessias de Balsa"
+    estado_pais: "Eslovênia, Croácia, Bósnia e Herzegovina, Montenegro"
+    cidades_limite: ["Liubliana", "Zagrebe", "Sarajevo", "Mostar", "Dubrovnik", "Kotor", "Hvar", "Split", "Zadar"]
+    extensao_km: 2100
+    curvas_totais: 520
+    altimetria_minima_m: 0
+    altimetria_maxima_m: 950
+    tipo_pavimento: "Asfalto calcário polido na rodovia D8 (Jadranska Magistrala), serras cársticas e travessias marítimas dálmatas"
+    severidade: "Média-Alta (vento Bora costeiro com rajadas laterais, curvas cegas em penhascos e asfalto com baixa aderência sob garoa)"
+    melhor_epoca: "Maio a Setembro (clima mediterrâneo estável, mar calmo e dias ensolarados)"
+    conexoes:
+      veiculos: ["bmw_r1300gs_touring", "bmw_r1250gs_adventure", "big_trail_crossover_1000"]
+      equipamentos: ["jaqueta_cordura_ventilada_com_liner", "capacete_com_viseira_solar_uv", "luvas_touring_ventiladas", "botas_impermeaveis_respiraveis"]
+      pilotagem: ["leitura_asfalto_calcario_polido", "frenagem_motor_serpentina_kotor", "inclinacao_vento_bora", "contraesterco_curvas_costeiras"]
+      riscos: ["rajadas_vento_bora_velebit", "asfalto_calcario_escorregadio_com_garoa", "calor_intenso_costeiro_julho_agosto", "filas_aduaneiras_fronteiras_nao_schengen"]
+      cidades_base: ["liubliana", "zagrebe", "sarajevo", "mostar", "orebic", "dubrovnik", "kotor", "hvar", "split", "zadar"]
+      gastronomia: ["ostras_frescas_de_ston", "azeites_trufados_istria", "peixe_grelhado_riba_na_grade", "vinho_tinto_dingac_peljesac", "cevapi_tradicional"]
+      caso_eduardo: "eduardo_vento_bora_jadranska_magistrala"

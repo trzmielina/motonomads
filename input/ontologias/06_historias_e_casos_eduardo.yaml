@@ -70,3 +70,17 @@ casos_reais_eduardo:
       nunca descer no neutro, usar sempre Pinlock 120 e jaqueta laminada (que repele a água por fora sem encharcar o tecido).
       Ao entrar nos ferryboats, cruze as grelhas de metal molhadas com a moto completamente reta e sem tocar no freio dianteiro.
     frase_eduardo: "A Escandinávia não quer saber da sua pressa. O norte exige respeito, equipamento estanque e olhos atentos em cada curva."
+
+  - id: "eduardo_vento_bora_jadranska_magistrala"
+    titulo: "O Vento Bora na Jadranska Magistrala e o Asfalto Calcário Dálmata"
+    destino_associado: "adriatico_costa_dalmata_balcas"
+    situacao: "Pilotagem na rodovia D8 entre Senj e Zadar com rajadas laterais do vento Bora descendo da Cordilheira Velebit."
+    o_que_aconteceu: >
+      O Mar Adriático estava de um azul inacreditável, mas assim que dobramos uma curva aberta de penhasco, fomos atingidos
+      por uma rajada lateral de mais de 70 km/h descendo a montanha. O asfalto dálmata, composto por agregados de calcário branco,
+      tinha acabado de receber uma garoa rápida e parecia uma pista encerada. Quem tentou frear forte na curva quase perdeu a frente.
+    licao_pratica: >
+      Na costa da Croácia, asfalto calcário molhado não aceita frenagens bruscas; reduza a velocidade antes de inclinar a moto
+      e acelere de forma progressiva. Quando o vento Bora bater, pilote com o corpo firme, cotovelos flexionados e motor em giro
+      médio para manter o efeito giroscópico das rodas estabilizando a trajetória.
+    frase_eduardo: "O Adriático é puro deleite para quem sabe ler o asfalto. Ali, a calma no acelerador é o que separa um passeio espetacular de um susto desnecessário."
