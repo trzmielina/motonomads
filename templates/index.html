@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoNomads | Live Agent Squad Monitor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-deep: #070a12;
+            --bg-surface: #0e1626;
+            --bg-card: #141f36;
+            --bg-card-hover: #1b2947;
+            --border: rgba(255, 255, 255, 0.08);
+            --border-highlight: rgba(249, 115, 22, 0.4);
+            --orange: #f97316;
+            --orange-glow: rgba(249, 115, 22, 0.25);
+            --emerald: #10b981;
+            --emerald-glow: rgba(16, 185, 129, 0.25);
+            --cyan: #06b6d4;
+            --cyan-glow: rgba(6, 182, 212, 0.25);
+            --purple: #a855f7;
+            --amber: #f59e0b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --text-dim: #64748b;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-deep);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 15% 15%, rgba(249, 115, 22, 0.06) 0%, transparent 40%),
+                radial-gradient(circle at 85% 85%, rgba(6, 182, 212, 0.04) 0%, transparent 40%);
+        }
+
+        /* Top Navbar */
+        .navbar {
+            background: rgba(14, 22, 38, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 36px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        .logo-wrap {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .logo-title {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 900;
+            font-size: 24px;
+            letter-spacing: 0.5px;
+            color: #fff;
+        }
+        .logo-title span { color: var(--orange); }
+
+        .squad-badge {
+            background: rgba(249, 115, 22, 0.12);
+            color: var(--orange);
+            border: 1px solid rgba(249, 115, 22, 0.3);
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .server-status {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.25);
+            padding: 6px 14px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--emerald);
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--emerald);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--emerald);
+            animation: pulse-ring 2s infinite ease-in-out;
+        }
+
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); opacity: 1; }
+            50% { transform: scale(1.3); opacity: 0.5; }
+            100% { transform: scale(0.95); opacity: 1; }
+        }
+
+        /* Container */
+        .main-container {
+            max-width: 1380px;
+            margin: 0 auto;
+            padding: 36px 24px 60px 24px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        /* Section Headings */
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 22px;
+            font-weight: 800;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-desc {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* 1. SQUAD GRID */
+        .squad-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 18px;
+        }
+
+        .agent-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .agent-card:hover {
+            transform: translateY(-3px);
+            background: var(--bg-card-hover);
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .agent-card.working {
+            border-color: var(--orange);
+            box-shadow: 0 0 25px var(--orange-glow);
+            animation: glow-pulse 1.8s infinite ease-in-out;
+        }
+
+        .agent-card.completed {
+            border-color: rgba(16, 185, 129, 0.4);
+            box-shadow: 0 0 15px rgba(16, 185, 129, 0.1);
+        }
+
+        @keyframes glow-pulse {
+            0% { box-shadow: 0 0 15px rgba(249, 115, 22, 0.2); }
+            50% { box-shadow: 0 0 30px rgba(249, 115, 22, 0.5); }
+            100% { box-shadow: 0 0 15px rgba(249, 115, 22, 0.2); }
+        }
+
+        .agent-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 14px;
+        }
+
+        .agent-avatar-wrap {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .agent-icon {
+            font-size: 26px;
+            width: 46px;
+            height: 46px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .agent-name {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 17px;
+            color: #fff;
+        }
+
+        .agent-role {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .status-badge {
+            font-size: 11px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 999px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .status-badge.idle {
+            background: rgba(255, 255, 255, 0.06);
+            color: var(--text-dim);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .status-badge.working {
+            background: rgba(249, 115, 22, 0.15);
+            color: var(--orange);
+            border: 1px solid var(--orange);
+            animation: blink-badge 1s infinite;
+        }
+
+        .status-badge.done {
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--emerald);
+            border: 1px solid var(--emerald);
+        }
+
+        @keyframes blink-badge {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+
+        .agent-bio {
+            font-size: 13px;
+            color: #cbd5e1;
+            line-height: 1.5;
+            margin-bottom: 14px;
+        }
+
+        .agent-task {
+            font-size: 12px;
+            color: var(--orange);
+            font-weight: 500;
+            background: rgba(0, 0, 0, 0.25);
+            padding: 8px 12px;
+            border-radius: 8px;
+            border-left: 3px solid var(--orange);
+            min-height: 34px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* 2. COMMAND CENTER & DISPATCHER */
+        .command-center {
+            background: var(--bg-surface);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            padding: 28px 32px;
+            display: grid;
+            grid-template-columns: 1fr 340px;
+            gap: 32px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .form-col {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            font-family: 'Outfit', sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--text-muted);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .text-input {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.35);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 14px 18px;
+            color: #fff;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            transition: all 0.2s;
+        }
+
+        .text-input:focus {
+            outline: none;
+            border-color: var(--orange);
+            box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .preset-chips {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+
+        .preset-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            color: var(--text-muted);
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .preset-btn:hover {
+            background: rgba(249, 115, 22, 0.12);
+            color: #fff;
+            border-color: var(--orange);
+        }
+
+        .pillar-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .pillar-radio {
+            display: none;
+        }
+
+        .pillar-label {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 12px 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .pillar-label span.icon { font-size: 20px; }
+        .pillar-label span.name { font-size: 12px; font-weight: 600; color: var(--text-muted); }
+
+        .pillar-radio:checked + .pillar-label {
+            background: rgba(249, 115, 22, 0.15);
+            border-color: var(--orange);
+            box-shadow: 0 0 15px rgba(249, 115, 22, 0.2);
+        }
+
+        .pillar-radio:checked + .pillar-label span.name {
+            color: #fff;
+        }
+
+        .action-col {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 24px;
+        }
+
+        .btn-dispatch {
+            background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+            color: #fff;
+            border: none;
+            border-radius: 14px;
+            padding: 18px 24px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+            font-size: 17px;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: 0 10px 25px rgba(249, 115, 22, 0.35);
+        }
+
+        .btn-dispatch:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 35px rgba(249, 115, 22, 0.5);
+            filter: brightness(1.1);
+        }
+
+        .btn-dispatch:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* 3. LIVE PIPELINE MONITOR (TERMINAL & STEP TRACKER) */
+        .live-monitor-card {
+            background: #080c14;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            overflow: hidden;
+            display: none; /* hidden until started */
+        }
+
+        .monitor-header {
+            background: #0f172a;
+            padding: 16px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .monitor-title {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .progress-bar-container {
+            padding: 24px;
+            background: rgba(15, 23, 42, 0.4);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .steps-pipeline {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .steps-pipeline::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.1);
+            z-index: 1;
+        }
+
+        .step-node {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .node-bubble {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background: #1e293b;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            color: #94a3b8;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .step-node.active .node-bubble {
+            background: var(--orange);
+            border-color: #fff;
+            color: #fff;
+            box-shadow: 0 0 20px var(--orange-glow);
+            transform: scale(1.1);
+        }
+
+        .step-node.done .node-bubble {
+            background: var(--emerald);
+            border-color: var(--emerald);
+            color: #fff;
+        }
+
+        .step-name {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-dim);
+            text-align: center;
+        }
+
+        .step-node.active .step-name { color: #fff; }
+        .step-node.done .step-name { color: var(--emerald); }
+
+        .terminal-box {
+            padding: 20px 24px;
+            background: #06090e;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            line-height: 1.7;
+            max-height: 320px;
+            overflow-y: auto;
+            color: #cbd5e1;
+        }
+
+        .log-line {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 6px;
+        }
+
+        .log-time { color: #64748b; font-size: 12px; }
+        .log-agent { color: var(--cyan); font-weight: 600; }
+        .log-msg { color: #e2e8f0; }
+
+        .delivery-banner {
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.15) 0%, rgba(6, 182, 212, 0.15) 100%);
+            border-top: 1px solid rgba(16, 185, 129, 0.3);
+            padding: 20px 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            display: none; /* revealed on finish */
+        }
+
+        .delivery-text h3 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 18px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+
+        .delivery-scores {
+            display: flex;
+            gap: 12px;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--emerald);
+        }
+
+        .btn-view-result {
+            background: var(--emerald);
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-view-result:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(16, 185, 129, 0.35);
+        }
+
+        /* 4. COMPLETED TOURS ARCHIVE */
+        .archive-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 16px;
+        }
+
+        .archive-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 20px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.2s;
+        }
+
+        .archive-card:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--border-highlight);
+            transform: translateY(-2px);
+        }
+
+        .archive-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 6px;
+        }
+
+        .archive-meta {
+            font-size: 12px;
+            color: var(--text-muted);
+            display: flex;
+            gap: 12px;
+        }
+
+        .archive-badges {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .score-pill {
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--emerald);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 700;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .btn-open-icon {
+            background: rgba(255, 255, 255, 0.08);
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        .archive-card:hover .btn-open-icon {
+            background: var(--orange);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+            border-top: 1px solid var(--border);
+            padding: 24px;
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <a href="/" class="logo-wrap">
+            <span style="font-size: 26px;">🏍️</span>
+            <div class="logo-title">MOTO<span>NOMADS</span></div>
+            <span class="squad-badge">SQUAD EDITORIAL IA</span>
+        </a>
+        <div class="server-status">
+            <div class="pulse-dot"></div>
+            <span>ESTEIRA AO VIVO (localhost:8080)</span>
+        </div>
+    </header>
+
+    <div class="main-container">
+
+        <!-- SECTION 1: AGENT SQUAD BOARD -->
+        <section>
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title"><span>👥</span> Squad de Agentes Especialistas</h2>
+                    <p class="section-desc">Equipe autônoma operando sob as diretrizes de Eduardo Generali com zero tolerância a clichês e foco em alto padrão.</p>
+                </div>
+            </div>
+
+            <div class="squad-grid" id="squad-grid">
+                <!-- Cards renderizados dinamicamente via JS -->
+            </div>
+        </section>
+
+        <!-- SECTION 2: COMMAND CENTER & DISPATCHER -->
+        <section>
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title"><span>🚀</span> Centro de Produção & Disparo</h2>
+                    <p class="section-desc">Selecione uma pauta, URL publicada ou tema para ativar o squad multi-agente em tempo real.</p>
+                </div>
+            </div>
+
+            <div class="command-center">
+                <div class="form-col">
+                    <div class="input-group">
+                        <label>Destino, Roteiro ou URL Base de Viagem</label>
+                        <input type="text" id="source-input" class="text-input" placeholder="Ex: Viagem de moto pelo Atacama 10 dias com Himalayan 450 cc..." value="Viagem de Moto pela Patagônia e Carretera Austral: Roteiro Premium de 14 Dias">
+                        <div class="preset-chips">
+                            <button type="button" class="preset-btn" onclick="applyPreset('Tour Atacama 10 Dias (Royal Enfield Himalayan 450 cc)')">📍 Atacama 10 Dias (Himalayan)</button>
+                            <button type="button" class="preset-btn" onclick="applyPreset('Viagem de Moto pelo Adriático e Bálcãs de BMW R 1300 GS')">📍 Adriático (BMW GS 1300)</button>
+                            <button type="button" class="preset-btn" onclick="applyPreset('Viagem de Moto pela Escandinávia e Fiordes Noruegueses')">📍 Escandinávia & Fiordes</button>
+                            <button type="button" class="preset-btn" onclick="applyPreset('Serra do Rio do Rastro de Moto (SC-390)')">📍 Serra do Rio do Rastro</button>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Pilar Temático Especialista</label>
+                        <div class="pillar-grid">
+                            <div>
+                                <input type="radio" name="pillar" id="p-moto" value="mototurismo" class="pillar-radio" checked>
+                                <label for="p-moto" class="pillar-label">
+                                    <span class="icon">🏍️</span>
+                                    <span class="name">Mototurismo</span>
+                                </label>
+                            </div>
+                            <div>
+                                <input type="radio" name="pillar" id="p-4x4" value="offroad_4x4" class="pillar-radio">
+                                <label for="p-4x4" class="pillar-label">
+                                    <span class="icon">🚙</span>
+                                    <span class="name">4x4 & Overlanding</span>
+                                </label>
+                            </div>
+                            <div>
+                                <input type="radio" name="pillar" id="p-outdoor" value="aventura_outdoor" class="pillar-radio">
+                                <label for="p-outdoor" class="pillar-label">
+                                    <span class="icon">🧗</span>
+                                    <span class="name">Aventura & Outdoor</span>
+                                </label>
+                            </div>
+                            <div>
+                                <input type="radio" name="pillar" id="p-culture" value="turismo_cultura" class="pillar-radio">
+                                <label for="p-culture" class="pillar-label">
+                                    <span class="icon">🗺️</span>
+                                    <span class="name">Destinos & Cultura</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Palavra-Chave Principal SEO & GEO (IA Overviews)</label>
+                        <input type="text" id="keyword-input" class="text-input" placeholder="Ex: viagem de moto patagonia roteiro bmw gs" value="viagem de moto patagonia roteiro bmw gs">
+                    </div>
+                </div>
+
+                <div class="action-col">
+                    <div>
+                        <h4 style="font-family: 'Outfit'; font-size: 16px; margin-bottom: 8px;">Regras Automáticas</h4>
+                        <ul style="font-size: 12px; color: var(--text-muted); list-style: none; display: flex; flex-direction: column; gap: 6px;">
+                            <li>✔ Banimento estrito de "Expedição"</li>
+                            <li>✔ Tom de Voz Eduardo Generali</li>
+                            <li>✔ Respostas Diretas GEO (40-60 palavras)</li>
+                            <li>✔ Ficha Técnica em Tabela e FAQ</li>
+                            <li>✔ Auditoria Formal com Marcus</li>
+                        </ul>
+                    </div>
+
+                    <button id="btn-dispatch" class="btn-dispatch" onclick="startPipeline()">
+                        <span>▶ Disparar Squad</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: LIVE MONITOR (TERMINAL & STEP PIPELINE) -->
+        <section id="monitor-section" class="live-monitor-card">
+            <div class="monitor-header">
+                <div class="monitor-title">
+                    <span style="color: var(--orange);">⚡</span>
+                    <span>Pipeline em Tempo Real: <strong id="current-task-name">Iniciando...</strong></span>
+                </div>
+                <div id="live-timer" style="font-family: 'JetBrains Mono'; font-size: 13px; color: var(--text-muted);">00:00</div>
+            </div>
+
+            <div class="progress-bar-container">
+                <div class="steps-pipeline">
+                    <div class="step-node" id="step-node-1">
+                        <div class="node-bubble">1</div>
+                        <div class="step-name">Ingestão & Ontologia</div>
+                    </div>
+                    <div class="step-node" id="step-node-2">
+                        <div class="node-bubble">2</div>
+                        <div class="step-name">Diego (Fatos)</div>
+                    </div>
+                    <div class="step-node" id="step-node-3">
+                        <div class="node-bubble">3</div>
+                        <div class="step-name">Marina (GEO/SEO)</div>
+                    </div>
+                    <div class="step-node" id="step-node-4">
+                        <div class="node-bubble">4</div>
+                        <div class="step-name">Especialista</div>
+                    </div>
+                    <div class="step-node" id="step-node-5">
+                        <div class="node-bubble">5</div>
+                        <div class="step-name">Helena (Tom)</div>
+                    </div>
+                    <div class="step-node" id="step-node-6">
+                        <div class="node-bubble">6</div>
+                        <div class="step-name">Marcus (Auditoria)</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="terminal-box" id="terminal-box">
+                <!-- Logs em tempo real adicionados aqui -->
+            </div>
+
+            <div class="delivery-banner" id="delivery-banner">
+                <div class="delivery-text">
+                    <h3>🎉 Matéria Produzida e Auditada com Sucesso!</h3>
+                    <div class="delivery-scores">
+                        <span id="banner-tone-score">Score Tom de Voz: 100/100</span>
+                        <span>•</span>
+                        <span id="banner-geo-score">Score GEO/SEO: 100/100</span>
+                    </div>
+                </div>
+                <a id="banner-view-link" href="#" target="_blank" class="btn-view-result">
+                    <span>Abrir Painel Visual da Matéria</span>
+                    <span>→</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- SECTION 4: COMPLETED TOURS ARCHIVE -->
+        <section>
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title"><span>📚</span> Tours & Guias Publicados</h2>
+                    <p class="section-desc">Arquivos HTML interativos renderizados e prontos para navegação na pasta <code>output/</code>.</p>
+                </div>
+            </div>
+
+            <div class="archive-grid" id="archive-grid">
+                <!-- Carregado dinamicamente -->
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        MotoNomads Editorial Engine • Squad Multi-Agente Autônomo com Padrão Eduardo Generali
+    </footer>
+
+    <script>
+        // Dados dos Agentes
+        const AGENTS = [
+            { id: "diego", name: "Diego Jornalista", role: "Investigador & Fact-Checker", icon: "🔍", bio: "Investiga fontes oficiais, altimetria, histórico de rodovias, pistas e clima real." },
+            { id: "ontology", name: "Grafo Ontológico", role: "Motor de Conhecimento", icon: "🗺️", bio: "Conecta cidades-base, oficinas, tipos de asfalto e casos reais de Eduardo Generali." },
+            { id: "marina", name: "Marina Estrategista", role: "Arquiteta SEO & GEO", icon: "🎯", bio: "Estrutura blocos direct-answer para ChatGPT/Perplexity, fichas técnicas e H2s." },
+            { id: "rodrigo", name: "Rodrigo Mototurismo", role: "Especialista 2 Rodas & Big Trails", icon: "🏍️", bio: "Sensorial de pilotagem, calibragem em pedra, curvas cegas e Arrive & Ride." },
+            { id: "bruno", name: "Bruno Off-Road", role: "Especialista 4x4 & Overlanding", icon: "🚙", bio: "Tração 4L, bloqueio de diferencial, camping embarcado e viagens severas." },
+            { id: "clara", name: "Clara Aventura", role: "Especialista Outdoor & Travessias", icon: "🧗", bio: "Trekking, aclimatação física e ética ambiental Leave No Trace." },
+            { id: "lucas", name: "Lucas Turismo", role: "Especialista Destinos & Cultura", icon: "🏛️", bio: "Hospitalidade de alto nível, vinhedos de altitude e gastronomia vernacular." },
+            { id: "helena", name: "Helena Editora", role: "Guardiã do Tom de Voz", icon: "🖋️", bio: "Elimina clichês, bane 'expedição' e lapida o ritmo estradeiro de Eduardo Generali." },
+            { id: "marcus", name: "Marcus Auditor", role: "Editor-Chefe & QA Formal", icon: "🧐", bio: "Audita rigorosamente as 4 dimensões (Tom, Fatos, SEO, GEO) e emite veredicto." }
+        ];
+
+        // Renderizar Squad Cards
+        function renderSquad() {
+            const grid = document.getElementById("squad-grid");
+            grid.innerHTML = AGENTS.map(agent => `
+                <div class="agent-card" id="card-${agent.id}">
+                    <div class="agent-header">
+                        <div class="agent-avatar-wrap">
+                            <div class="agent-icon">${agent.icon}</div>
+                            <div>
+                                <div class="agent-name">${agent.name}</div>
+                                <div class="agent-role">${agent.role}</div>
+                            </div>
+                        </div>
+                        <span class="status-badge idle" id="badge-${agent.id}">● Ocioso</span>
+                    </div>
+                    <div class="agent-bio">${agent.bio}</div>
+                    <div class="agent-task" id="task-${agent.id}">Aguardando pauta...</div>
+                </div>
+            `).join("");
+        }
+
+        function setAgentStatus(agentId, status, taskText) {
+            const card = document.getElementById(`card-${agentId}`);
+            const badge = document.getElementById(`badge-${agentId}`);
+            const task = document.getElementById(`task-${agentId}`);
+            if (!card || !badge) return;
+
+            card.classList.remove("working", "completed");
+            badge.classList.remove("idle", "working", "done");
+
+            if (status === "working") {
+                card.classList.add("working");
+                badge.classList.add("working");
+                badge.innerHTML = "⚡ Em Ação";
+                if (taskText) task.innerHTML = taskText;
+            } else if (status === "done") {
+                card.classList.add("completed");
+                badge.classList.add("done");
+                badge.innerHTML = "✓ Concluído";
+                if (taskText) task.innerHTML = taskText;
+            } else {
+                badge.classList.add("idle");
+                badge.innerHTML = "● Ocioso";
+                task.innerHTML = "Aguardando pauta...";
+            }
+        }
+
+        function resetAllAgents() {
+            AGENTS.forEach(a => setAgentStatus(a.id, "idle"));
+            for (let i = 1; i <= 6; i++) {
+                const node = document.getElementById(`step-node-${i}`);
+                if (node) node.className = "step-node";
+            }
+        }
+
+        function applyPreset(text) {
+            document.getElementById("source-input").value = text;
+        }
+
+        // Carregar Artigos Prontos
+        async function loadArticles() {
+            try {
+                const res = await fetch("/api/articles");
+                const data = await res.json();
+                const grid = document.getElementById("archive-grid");
+                if (!data || data.length === 0) {
+                    grid.innerHTML = "<p style='color: var(--text-muted);'>Nenhum artigo encontrado em output/.</p>";
+                    return;
+                }
+                grid.innerHTML = data.map(item => `
+                    <a href="/output/${item.filename}" target="_blank" class="archive-card">
+                        <div>
+                            <div class="archive-title">${item.title}</div>
+                            <div class="archive-meta">
+                                <span>📅 ${item.date}</span>
+                                <span>📄 ${item.filename}</span>
+                            </div>
+                        </div>
+                        <div class="archive-badges">
+                            <span class="score-pill">100/100</span>
+                            <div class="btn-open-icon">→</div>
+                        </div>
+                    </a>
+                `).join("");
+            } catch (err) {
+                console.error("Erro ao carregar artigos:", err);
+            }
+        }
+
+        // Iniciar Pipeline e Conectar ao EventStream
+        let timerInterval = null;
+        let startTime = 0;
+
+        async function startPipeline() {
+            const source = document.getElementById("source-input").value.trim();
+            const keyword = document.getElementById("keyword-input").value.trim();
+            const pillar = document.querySelector('input[name="pillar"]:checked').value;
+            const btn = document.getElementById("btn-dispatch");
+
+            if (!source) {
+                alert("Por favor, digite o destino ou URL!");
+                return;
+            }
+
+            btn.disabled = true;
+            btn.innerHTML = "<span>⏳ Executando Squad...</span>";
+
+            resetAllAgents();
+            const monitorSection = document.getElementById("monitor-section");
+            const terminalBox = document.getElementById("terminal-box");
+            const deliveryBanner = document.getElementById("delivery-banner");
+
+            monitorSection.style.display = "block";
+            deliveryBanner.style.display = "none";
+            terminalBox.innerHTML = "";
+            document.getElementById("current-task-name").innerText = source;
+
+            // Iniciar Cronômetro
+            startTime = Date.now();
+            clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                const elapsedSec = Math.floor((Date.now() - startTime) / 1000);
+                const mins = String(Math.floor(elapsedSec / 60)).padStart(2, '0');
+                const secs = String(elapsedSec % 60).padStart(2, '0');
+                document.getElementById("live-timer").innerText = `${mins}:${secs}`;
+            }, 1000);
+
+            // Disparar POST /api/run
+            try {
+                const response = await fetch("/api/run", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ source, pillar, keyword })
+                });
+
+                const data = await response.json();
+                if (data.status === "error") {
+                    addLog("SISTEMA", "Erro ao iniciar: " + data.error);
+                    btn.disabled = false;
+                    btn.innerHTML = "<span>▶ Disparar Squad</span>";
+                    clearInterval(timerInterval);
+                    return;
+                }
+
+                const jobId = data.job_id;
+                subscribeToJobStream(jobId);
+
+            } catch (err) {
+                addLog("SISTEMA", "Falha de conexão com a API: " + err.message);
+                btn.disabled = false;
+                btn.innerHTML = "<span>▶ Disparar Squad</span>";
+                clearInterval(timerInterval);
+            }
+        }
+
+        function addLog(agentName, message) {
+            const terminal = document.getElementById("terminal-box");
+            const timeStr = new Date().toLocaleTimeString();
+            const line = document.createElement("div");
+            line.className = "log-line";
+            line.innerHTML = `
+                <span class="log-time">[${timeStr}]</span>
+                <span class="log-agent">[${agentName.toUpperCase()}]</span>
+                <span class="log-msg">${message}</span>
+            `;
+            terminal.appendChild(line);
+            terminal.scrollTop = terminal.scrollHeight;
+        }
+
+        function updateStepNode(stepNum) {
+            for (let i = 1; i <= 6; i++) {
+                const node = document.getElementById(`step-node-${i}`);
+                if (!node) continue;
+                if (i < stepNum) {
+                    node.className = "step-node done";
+                } else if (i === stepNum) {
+                    node.className = "step-node active";
+                } else {
+                    node.className = "step-node";
+                }
+            }
+        }
+
+        function subscribeToJobStream(jobId) {
+            const eventSource = new EventSource(`/api/stream/${jobId}`);
+
+            eventSource.onmessage = function(event) {
+                const data = JSON.parse(event.data);
+
+                if (data.type === "step") {
+                    const agentId = data.agent_id || "orchestrator";
+                    const stepNum = data.step_num || 1;
+                    const msg = data.message || "";
+
+                    updateStepNode(stepNum);
+
+                    // Atualiza status do agente
+                    setAgentStatus(agentId, "working", msg);
+
+                    // Adiciona log visual
+                    const agentObj = AGENTS.find(a => a.id === agentId);
+                    const agentName = agentObj ? agentObj.name : "Orquestrador";
+                    addLog(agentName, msg);
+
+                } else if (data.type === "done") {
+                    eventSource.close();
+                    clearInterval(timerInterval);
+
+                    for (let i = 1; i <= 6; i++) {
+                        const node = document.getElementById(`step-node-${i}`);
+                        if (node) node.className = "step-node done";
+                    }
+
+                    AGENTS.forEach(a => setAgentStatus(a.id, "done", "Missão cumprida"));
+
+                    addLog("MARCUS AUDITOR", "✅ Pipeline concluído com distinção! Veredicto: Aprovado para Publicação.");
+
+                    const deliveryBanner = document.getElementById("delivery-banner");
+                    deliveryBanner.style.display = "flex";
+
+                    const htmlFilename = data.result.html_file ? data.result.html_file.split("/").pop() : "";
+                    const linkBtn = document.getElementById("banner-view-link");
+                    linkBtn.href = `/output/${htmlFilename}`;
+
+                    document.getElementById("btn-dispatch").disabled = false;
+                    document.getElementById("btn-dispatch").innerHTML = "<span>▶ Disparar Novo Tour</span>";
+
+                    // Recarregar arquivo de matérias
+                    loadArticles();
+
+                } else if (data.type === "error") {
+                    eventSource.close();
+                    clearInterval(timerInterval);
+                    addLog("ERRO", data.error);
+                    document.getElementById("btn-dispatch").disabled = false;
+                    document.getElementById("btn-dispatch").innerHTML = "<span>▶ Disparar Squad</span>";
+                }
+            };
+
+            eventSource.onerror = function() {
+                eventSource.close();
+                clearInterval(timerInterval);
+                document.getElementById("btn-dispatch").disabled = false;
+                document.getElementById("btn-dispatch").innerHTML = "<span>▶ Disparar Squad</span>";
+            };
+        }
+
+        // Inicialização
+        window.addEventListener("DOMContentLoaded", () => {
+            renderSquad();
+            loadArticles();
+        });
+    </script>
+</body>
+</html>

@@ -162,7 +162,7 @@ def main_menu():
                     source=source,
                     pillar=pillar,
                     target_keyword=keyword,
-                    on_step_callback=lambda msg: console.print(f"[bold cyan]>[/bold cyan] {msg}"),
+                    on_step_callback=lambda event: console.print(f"[bold cyan]>[/bold cyan] {event['message'] if isinstance(event, dict) else event}"),
                 )
 
             if result.get("status") == "error":

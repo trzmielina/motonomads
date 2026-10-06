@@ -69,14 +69,24 @@ class MotonomadsOrchestrator:
         :param target_keyword: Palavra-chave principal opcional para SEO/GEO.
         :param on_step_callback: Função para reportar progresso para a CLI / UI.
         """
-        def step(msg: str):
+        def step(msg: str, agent_id: str = "orchestrator", step_num: int = 1, preview: str = ""):
+            payload = {
+                "message": msg,
+                "agent_id": agent_id,
+                "step_num": step_num,
+                "total_steps": 6,
+                "preview": preview,
+            }
             if on_step_callback:
-                on_step_callback(msg)
+                try:
+                    on_step_callback(payload)
+                except TypeError:
+                    on_step_callback(msg)
             else:
                 print(f"[*] {msg}")
 
         # ETAPA 1: Ingestão de Conteúdo Base
-        step("Etapa 1/6: Ingestão e extração do artigo ou texto base...")
+        step("Etapa 1/6: Ingestão e extração do artigo ou texto base...", agent_id="diego", step_num=1)
         if source.startswith("http://") or source.startswith("https://"):
             raw_data = self.extractor.extract_from_url(source)
         else:
@@ -89,7 +99,7 @@ class MotonomadsOrchestrator:
         conteudo_original = raw_data.get("content", "")
 
         # ETAPA INTERMEDIÁRIA: Consulta ao Grafo Ontológico MotoNomads
-        step("Etapa de Inteligência: Cruzando entidades e relações no Grafo Ontológico...")
+        step("Etapa de Inteligência: Cruzando entidades e relações no Grafo Ontológico...", agent_id="ontology", step_num=1)
         ontological_data = self.ontology.build_ontological_brief(f"{titulo_original} {conteudo_original}")
         contexto_ontologico_txt = ""
         if ontological_data.get("matched"):
@@ -115,36 +125,41 @@ class MotonomadsOrchestrator:
                 )
 
         # ETAPA 2: Investigação Jornalística & Enriquecimento
-        step(f"Etapa 2/6: Diego Jornalista realizando fact-checking e dossiê investigativo...")
+        step("Etapa 2/6: Diego Jornalista realizando fact-checking e dossiê investigativo...", agent_id="diego", step_num=2)
         texto_para_investigacao = f"{conteudo_original}\n{contexto_ontologico_txt}"
         dossie_jornalistico = self.diego.investigar_e_enriquecer(texto_para_investigacao, titulo_original)
 
         # ETAPA 3: Arquitetura de SEO Tradicional & GEO para IAs
-        step("Etapa 3/6: Marina Estrategista desenhando arquitetura de busca e blocos de citação para IAs...")
+        step("Etapa 3/6: Marina Estrategista desenhando arquitetura de busca e blocos de citação para IAs...", agent_id="marina", step_num=3)
         briefing_seo_geo = self.marina.planejar_arquitetura_seo_geo(titulo_original, dossie_jornalistico)
 
         # ETAPA 4: Redação por Especialista Temático
         specialist_name = ""
         specialist_text = ""
+        specialist_agent_id = "specialist"
         if pillar == "mototurismo":
-            step("Etapa 4/6: Rodrigo Mototurismo redigindo matéria especializada em duas rodas...")
+            specialist_agent_id = "rodrigo"
+            step("Etapa 4/6: Rodrigo Mototurismo redigindo matéria especializada em duas rodas...", agent_id=specialist_agent_id, step_num=4)
             specialist_name = self.rodrigo.name
             specialist_text = self.rodrigo.redigir_materia(briefing_seo_geo, dossie_jornalistico, conteudo_original)
         elif pillar in ["offroad_4x4", "4x4"]:
-            step("Etapa 4/6: Bruno Off-Road redigindo matéria especializada em 4x4 e overlanding...")
+            specialist_agent_id = "bruno"
+            step("Etapa 4/6: Bruno Off-Road redigindo matéria especializada em 4x4 e overlanding...", agent_id=specialist_agent_id, step_num=4)
             specialist_name = self.bruno.name
             specialist_text = self.bruno.redigir_materia(briefing_seo_geo, dossie_jornalistico, conteudo_original)
         elif pillar in ["aventura_outdoor", "aventura", "outdoor"]:
-            step("Etapa 4/6: Clara Aventura redigindo matéria especializada em trekking e outdoor...")
+            specialist_agent_id = "clara"
+            step("Etapa 4/6: Clara Aventura redigindo matéria especializada em trekking e outdoor...", agent_id=specialist_agent_id, step_num=4)
             specialist_name = self.clara.name
             specialist_text = self.clara.redigir_materia(briefing_seo_geo, dossie_jornalistico, conteudo_original)
         else:
-            step("Etapa 4/6: Lucas Turismo redigindo matéria especializada em destinos e cultura regional...")
+            specialist_agent_id = "lucas"
+            step("Etapa 4/6: Lucas Turismo redigindo matéria especializada em destinos e cultura regional...", agent_id=specialist_agent_id, step_num=4)
             specialist_name = self.lucas.name
             specialist_text = self.lucas.redigir_materia(briefing_seo_geo, dossie_jornalistico, conteudo_original)
 
         # ETAPA 5: Harmonização Editorial & Aplicação da Matriz de Tom de Voz
-        step("Etapa 5/6: Helena Editora aplicando rigorosamente a Tabela de Tom de Voz Motonomads...")
+        step("Etapa 5/6: Helena Editora aplicando rigorosamente a Tabela de Tom de Voz Motonomads...", agent_id="helena", step_num=5)
         artigo_harmonizado = self.helena.harmonizar_e_editar(
             texto_rascunho=specialist_text,
             pilar_escolhido=pillar,
@@ -156,7 +171,7 @@ class MotonomadsOrchestrator:
         local_geo_audit = self.geo_optimizer.audit_geo_seo(artigo_harmonizado, target_keyword)
 
         # ETAPA 6: Auditoria Cruzada de Qualidade, Fatos e Padrões GEO/SEO
-        step("Etapa 6/6: Marcus Auditor realizando auditoria final cruzada e emitindo parecer formal...")
+        step("Etapa 6/6: Marcus Auditor realizando auditoria final cruzada e emitindo parecer formal...", agent_id="marcus", step_num=6)
         relatorio_auditoria = self.marcus.auditar_artigo(artigo_harmonizado, pillar, target_keyword)
 
         # Gerar arquivos de saída
