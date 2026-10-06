@@ -44,7 +44,7 @@ class DiegoJornalista(BaseAgent):
 
     def investigar_e_enriquecer(self, texto_original: str, titulo: str = "") -> str:
         prompt = (
-            f"Receba o seguinte texto base publicado sobre o destino/expedição:\n\n"
+            f"Receba o seguinte texto base publicado sobre o destino/viagem:\n\n"
             f"TÍTULO ORIGINAL: {titulo}\n\n"
             f"CONTEÚDO ORIGINAL:\n{texto_original}\n\n"
             f"TAREFA JORNALÍSTICA:\n"

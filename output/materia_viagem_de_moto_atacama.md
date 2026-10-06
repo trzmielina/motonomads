@@ -1,16 +1,16 @@
 # Viagem de Moto pelo Atacama: O Guia Definitivo do Mototurismo de Alto Padrão nos Andes
 
-A viagem de moto pelo Atacama e Puna Argentina em formato premium percorre 2.200 km ao longo de 10 dias de expedição no modelo Arrive & Ride. O roteiro cruza a Cordilheira dos Andes pelo cinematográfico Paso de Jama a 4.820 metros de altitude com a nova Royal Enfield Himalayan 450 cc alugada na Argentina, combinando a agilidade da moto em salares e cânions com a hospedagem em wine resorts em Cafayate, lodges de luxo com spa em San Pedro de Atacama e suporte integral de carro de apoio com oxigênio medicinal.
+A viagem de moto pelo Atacama e Puna Argentina em formato premium percorre 2.200 km ao longo de 10 dias de tour no modelo Arrive & Ride. O roteiro cruza a Cordilheira dos Andes pelo cinematográfico Paso de Jama a 4.820 metros de altitude com a nova Royal Enfield Himalayan 450 cc alugada na Argentina, combinando a agilidade da moto em salares e cânions com a hospedagem em wine resorts em Cafayate, lodges de luxo com spa em San Pedro de Atacama e suporte integral de carro de apoio com oxigênio medicinal.
 
-Olha só, cruzar a Cordilheira dos Andes e o Deserto do Atacama sobre duas rodas é uma das experiências mais imponentes e transformadoras que um motociclista pode viver na vida. Mas deserto e altitude extrema não aceitam amadorismo nem improvisação de equipamento. Existe uma ideia equivocada de que expedição nos Andes exige Big Trails pesadas de mais de 260 kg que esgotam as forças do piloto na pedra ou exigem perrengue em pousadas precárias. Para mim, a verdadeira sofisticação no mototurismo é escolher a ferramenta tecnicamente perfeita para a geografia da rota: a nova Royal Enfield Himalayan 450 cc, uma moto leve, moderna e com aro 21 na dianteira, que engole o rípio andino com agilidade absoluta. Você vence os passos andinos a quase 5.000 metros sem se desgastar, sabendo que a sua bagagem pesada viaja segura no carro de apoio com cilindro de oxigênio de retaguarda, enquanto os melhores hotéis boutique e a alta gastronomia andina aguardam por você a cada fim de tarde. Na verdade, inteligência técnica e infraestrutura profissional são o que separam uma viagem cansativa de uma jornada de puro prazer ao guidão.
+Olha só, cruzar a Cordilheira dos Andes e o Deserto do Atacama sobre duas rodas é uma das experiências mais imponentes e transformadoras que um motociclista pode viver na vida. Mas deserto e altitude extrema não aceitam amadorismo nem improvisação de equipamento. Existe uma ideia equivocada de que viajar pelos Andes exige Big Trails pesadas de mais de 260 kg que esgotam as forças do piloto na pedra ou exigem perrengue em pousadas precárias. Para mim, a verdadeira sofisticação no mototurismo é escolher a ferramenta tecnicamente perfeita para a geografia da rota: a nova Royal Enfield Himalayan 450 cc, uma moto leve, moderna e com aro 21 na dianteira, que engole o rípio andino com agilidade absoluta. Você vence os passos andinos a quase 5.000 metros sem se desgastar, sabendo que a sua bagagem pesada viaja segura no carro de apoio com cilindro de oxigênio de retaguarda, enquanto os melhores hotéis boutique e a alta gastronomia andina aguardam por você a cada fim de tarde. Na verdade, inteligência técnica e infraestrutura profissional são o que separam uma viagem cansativa de uma jornada de puro prazer ao guidão.
 
-## Ficha Técnica da Expedição Atacama (10 Dias)
+## Ficha Técnica do Tour Atacama (10 Dias)
 
-A expedição de alto padrão pelo Atacama conecta o Noroeste Argentino ao Deserto do Atacama chileno em um circuito de 2.200 km, unindo subidas de montanha, salares monumentais, vinhedos de altitude e suporte operacional contínuo.
+O tour de alto padrão pelo Atacama conecta o Noroeste Argentino ao Deserto do Atacama chileno em um circuito de 2.200 km, unindo subidas de montanha, salares monumentais, vinhedos de altitude e suporte operacional contínuo.
 
-| Parâmetro de Expedição | Especificação Técnica e Padrão de Serviço |
+| Parâmetro do Tour | Especificação Técnica e Padrão de Serviço |
 | :--- | :--- |
-| **Duração da Expedição** | 10 Dias (Circuito com início e término em Salta, Argentina) |
+| **Duração do Tour** | 10 Dias (Circuito com início e término em Salta, Argentina) |
 | **Distância Total Rodada** | 2.200 km (Asfalto cênico de alta montanha e rípio andino firme) |
 | **Formato Operacional** | Arrive & Ride Premium com Carro de Apoio para Bagagens, Oxigênio e Guia Especialista |
 | **Frota Oficial** | Royal Enfield Himalayan 450 cc (Motor Sherpa de refrigeração líquida, 40 cv e aro 21), alugadas na Argentina |
@@ -47,25 +47,25 @@ A aridez extrema do Atacama, com umidade relativa do ar frequentemente abaixo de
 O roteiro de 10 dias foi meticulosamente desenhado com uma curva científica de aclimatação gradual de altitude, garantindo que o corpo se adapte progressivamente antes de cruzar os passos mais elevados da cordilheira, combinando estradas consagradas com a melhor hospitalidade do noroeste argentino e do deserto chileno.
 
 - **Dia 01: Chegada em Salta (1.200m)** — Recepção privativa no aeroporto internacional, traslado ao hotel boutique de categoria superior, briefing operacional detalhado sobre segurança em altitude e entrega das Royal Enfield Himalayan 450 cc alugadas com ajuste ergonômico individualizado.
-- **Dia 02: Salta a Cafayate (200 km | 1.660m)** — Início da expedição cruzando a cinematográfica Quebrada de las Conchas pela rodovia RN68, serpenteando por cânions avermelhados como a Garganta del Diablo e o Anfiteatro. Chegada a Cafayate para hospedagem em wine resort de luxo encravado em meio aos vinhedos andinos.
+- **Dia 02: Salta a Cafayate (200 km | 1.660m)** — Início da viagem cruzando a cinematográfica Quebrada de las Conchas pela rodovia RN68, serpenteando por cânions avermelhados como a Garganta del Diablo e o Anfiteatro. Chegada a Cafayate para hospedagem em wine resort de luxo encravado em meio aos vinhedos andinos.
 - **Dia 03: Cafayate a Cachi (160 km | 2.280m)** — Pilotagem envolvente pela mítica Ruta 40, atravessando as formações pontiagudas da Quebrada de las Flechas e alcançando o vilarejo colonial de Cachi, com visitação aos vinhedos de altitude extrema da vinícola Colomé.
 - **Dia 04: Cachi a Purmamarca (220 km | 2.320m)** — Descida técnica e sinuosa da vertiginosa Cuesta del Obispo através do Parque Nacional Los Cardones, contornando o vale até o charmoso vilarejo de Purmamarca, aninhado aos pés do monumental Cerro de los Siete Colores.
 - **Dia 05: Purmamarca a San Pedro de Atacama (420 km | 2.400m)** — O dia ápice da travessia andina: escalamos os cotovelos perfeitos da Cuesta de Lipán até 4.170 metros, cruzamos a imensidão branca das Salinas Grandes e vencemos o Paso de Jama a 4.820 metros de altitude. Entrada triunfal no Chile e descida panorâmica em direção ao oásis de San Pedro de Atacama para acomodação em lodge exclusivo com spa.
 - **Dia 06: San Pedro de Atacama (0 km)** — Dia livre dedicado ao descanso físico e ao bem-estar, usufruindo das massagens e piscinas termais do lodge. No final da tarde, visita privativa ao Valle de la Luna para apreciar o pôr do sol sobre as dunas e formações de sal, seguido de jantar gastronômico sob o céu estrelado.
 - **Dia 07: Geysers del Tatio e Salares Altiplânicos (180 km | 4.300m)** — Pilotagem matinal com a Himalayan leve até o impressionante campo geotérmico dos Geysers del Tatio, observando as colunas de vapor mineral ao amanhecer e avistando rebanhos de vicunhas e flamingos andinos nas lagoas salgadas do altiplano.
 - **Dia 08: San Pedro de Atacama a Susques / Purmamarca (320 km)** — Retravessia da Cordilheira dos Andes com o organismo perfeitamente aclimatado, apreciando a imponência dos vulcões Licancabur e Juriques sob a luz dourada do deserto e pernoitando em hotel selecionado na serra argentina.
-- **Dia 09: Purmamarca a Salta (160 km)** — Retorno relaxado pela Quebrada de Humahuaca até a cidade de Salta, devolução tranquila das motocicletas revisadas e jantar de encerramento em restaurante de alta cozinha saltenha para celebrar a conquista da expedição.
+- **Dia 09: Purmamarca a Salta (160 km)** — Retorno relaxado pela Quebrada de Humahuaca até a cidade de Salta, devolução tranquila das motocicletas revisadas e jantar de encerramento em restaurante de alta cozinha saltenha para celebrar a conquista da viagem.
 - **Dia 10: Salta e Retorno ao Brasil** — Check-out descontraído, traslado privativo até o aeroporto de Salta e embarque de volta para casa com memórias grandiosas na bagagem.
 
 ## Enoturismo de Altitude Extrema e Alta Gastronomia Andina
 
-A vivência de uma expedição de luxo pelo Atacama e pelos Andes se consolida na sofisticação da mesa e no repouso impecável oferecido pelos melhores refúgios da região.
+A vivência de uma viagem de luxo pelo Atacama e pelos Andes se consolida na sofisticação da mesa e no repouso impecável oferecido pelos melhores refúgios da região.
 
 Em Cafayate, a viagem conecta o piloto à produção vinícola mais alta do planeta. Os vinhedos cultivados acima de 2.000 e 3.000 metros de altitude recebem radiação solar intensa e amplitudes térmicas diárias de mais de 20°C, gerando uvas Torrontés de aroma floral inconfundível e tintos Malbec estruturados de grande concentração e elegância. Jantares harmonizados em bodegas históricas como Colomé e El Esteco revelam carnes nobres argentinas preparadas no fogo de chão, acompanhadas pelas autênticas empanadas salteñas cortadas na ponta da faca e assadas no forno de barro.
 
 Já em San Pedro de Atacama, a gastronomia celebra a riqueza dos ingredientes autóctones do deserto: pratos sofisticados elaborados com quinoa real orgânica, carnes de caça nobres como o lomo de lhama grelhado ao molho de vinho tinto, toques aromáticos da erva nativa rica-rica e sobremesas refinadas com calda de chañar.
 
-Ao final de cada dia de serra e poeira, os lodges de deserto construídos com arquitetura vernacular de adobe e madeira nobre proporcionam um refúgio de absoluto requinte. Piscinas aquecidas ao ar livre voltadas para a cordilheira vulcânica, banheiras de imersão e saunas secas aliviam a tensão muscular e restauram a vitalidade, consolidando a essência do mototurismo de alto padrão: a aventura pura da estrada acompanhada pelo mais alto padrão de conforto, segurança e hospitalidade.
+Ao final de cada dia de serra e poeira, os lodges de deserto construídos com arquitetura vernacular de adobe e madeira nobre proporcionam um refúgio de absoluto requinte. Piscinas aquecidas ao ar livre voltadas para a cordilheira vulcânica, banheiras de imersão e saunas secas aliviam a tensão muscular e restauram a vitalidade, consolidando a essência do mototurismo de alto padrão: o prazer autêntico da pilotagem na estrada acompanhado pelo mais alto padrão de conforto, segurança e hospitalidade.
 
 ## Perguntas Frequentes (FAQ)
 
@@ -75,7 +75,7 @@ O tour é realizado exclusivamente com as novas Royal Enfield Himalayan 450 cc a
 ### Como funciona a aclimatação ao mal de altitude (soroche) durante o tour?
 O roteiro de 10 dias foi planejado cientificamente com subidas e pernoites em altitudes graduais (1.200m em Salta, 1.660m em Cafayate e 2.320m em Purmamarca) antes de cruzar o Paso de Jama a 4.820 metros. Além disso, o carro de apoio que acompanha o grupo transporta cilindro de oxigênio medicinal hospitalar e oxímetros para monitoramento preventivo diário da oxigenação sanguínea dos participantes.
 
-### Preciso carregar bagagens pesadas na moto durante a expedição?
+### Preciso carregar bagagens pesadas na moto durante o tour?
 Não. A van de apoio da MotoNomads transporta todas as malas principais de hotel em hotel com segurança absoluta. Você pilota a sua Himalayan completamente leve e ágil pelas curvas de montanha, levando na moto apenas itens de uso pessoal imediato (como luvas reservas, jaqueta corta-vento e câmera), o que reduz drasticamente o cansaço físico e eleva o nível de segurança na pilotagem.
 
 ### Qual é a documentação necessária para cruzar a fronteira entre Argentina e Chile?

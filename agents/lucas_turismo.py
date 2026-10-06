@@ -52,7 +52,7 @@ class LucasTurismo(BaseAgent):
             f"DIRETRIZES DE REDAÇÃO:\n"
             f"1. Siga os blocos de SEO/GEO e insira as respostas diretas pós-H2 (40-60 palavras).\n"
             f"2. Construa a Ficha Técnica do Destino (distâncias a partir das capitais, melhor época, custo médio estimado).\n"
-            f"3. Destaque a base logística de apoio: pousadas acolhedoras para expedições, oficinas e postos de combustível.\n"
+            f"3. Destaque a base logística de apoio: pousadas acolhedoras para viagens, oficinas e postos de combustível.\n"
             f"4. Aprofunde na gastronomia local e na história regional de maneira rica e sensorial.\n"
             f"5. Redija o FAQ completo respondendo a dúvidas comuns de viagem e documentação.\n"
             f"6. O texto deve ter entre 1.500 e 2.500 palavras, em tom profissional, caloroso e livre de clichês."

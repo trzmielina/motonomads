@@ -82,6 +82,9 @@ Para manter a espontaneidade sem soar robótico, os textos devem incorporar as e
 * ❌ Frases truncadas ou quebradas
 * ❌ Vícios de linguagem descontrolados
 * ❌ Excesso irritante de "né" ou "eh" (a fala do Eduardo é bem pontuada e agradável)
+* ❌ **"Expedição" / "Expedições" (TERMO BANIDO)**:
+  > *"Expedição é um termo que pessoalmente não gosto mais de usar. Usamos tour e viagem. Expedição para mim remete a aventura e a desbravar algo sabe."* — Eduardo Generali
+  > **Substitutos obrigatórios:** **Tour**, **Viagem** ou **Roteiro**.
 
 ---
 

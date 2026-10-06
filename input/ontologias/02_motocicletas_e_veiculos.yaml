@@ -1,4 +1,4 @@
-# Domínio 08: Motocicletas e Veículos 4x4 de Expedição
+# Domínio 08: Motocicletas e Veículos 4x4 de Viagem e Overlanding
 # Especificações técnicas, configurações de fábrica, pontos fortes e vulnerabilidades mecânicas.
 
 motocicletas_e_veiculos:
@@ -15,7 +15,7 @@ motocicletas_e_veiculos:
       - "Excelente capacidade de transposição de valetas e pedras soltas devido ao diâmetro de 21 polegadas."
       - "Suspensões de longo curso absorvem impactos duros sem dar fim de curso frequente."
       - "Posição de pilotagem em pé ergonômica com guidão alto e pedaleiras largas."
-    vulnerabilidades_na_expedicao:
+    vulnerabilidades_na_viagem:
       - "Peso em ordem de marcha elevado (205 a 240 kg) torna quedas em areia fofa cansativas para reerguer."
       - "Pneus com câmara (alguns modelos) exigem espátulas e desmontagem de roda para reparar furos."
     conexoes:
@@ -38,7 +38,7 @@ motocicletas_e_veiculos:
       - "Conforto aerodinâmico soberbo para cruzar 800 a 1.000 km por dia em rodovias."
       - "Eixo cardã elimina a necessidade de lubrificação e ajuste de tensão diários na poeira/chuva."
       - "Roda raiada sem câmara (tubeless) permite conserto de furo de pneu em 3 minutos com macarrão."
-    vulnerabilidades_na_expedicao:
+    vulnerabilidades_na_viagem:
       - "Largura do motor boxer ou carenagens exige cuidado em trilhas estreitas com barrancos."
       - "Peso muito elevado para trilhas técnicas de pedra solta ou lamaçal profundo."
     conexoes:
@@ -60,7 +60,7 @@ motocicletas_e_veiculos:
       - "Peso leve (140 a 180 kg) permite levantar a moto sozinho facilmente mesmo em areia fofa."
       - "Mecânica simples que qualquer oficina de beira de estrada no interior do Brasil consegue reparar."
       - "Baixo consumo de combustível (28 a 35 km/l)."
-    vulnerabilidades_na_expedicao:
+    vulnerabilidades_na_viagem:
       - "Velocidade de cruzeiro limitada (100 a 115 km/h), exigindo paciência em retas longas de asfalto."
       - "Menor proteção aerodinâmica contra chuva e vento frio contínuo."
     conexoes:
@@ -75,7 +75,7 @@ motocicletas_e_veiculos:
     pontos_fortes:
       - "Capacidade de carga superior para levar água potável, geladeira 12V, estepe duplo e barraca de teto."
       - "Segurança para transpor alagados com snorkel acima da linha do capô."
-    vulnerabilidades_na_expedicao:
+    vulnerabilidades_na_viagem:
       - "Largura e raio de giro impedem passagens em trilhas fechadas de moto."
       - "Alto consumo em modo 4L em terrenos de atoleiro contínuo."
     conexoes:

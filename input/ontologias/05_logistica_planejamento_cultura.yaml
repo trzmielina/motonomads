@@ -3,7 +3,7 @@
 
 logistica_e_cultura:
   - id: "padrao_cidade_base_motonomads"
-    nome: "Critérios de Cidade-Base para Expedições"
+    nome: "Critérios de Cidade-Base para Viagens e Tours"
     categoria: "Logística e Hospedagem"
     requisitos_obrigatorios:
       - "Borracharia com ferramentas para remover rodas de motos pesadas ou veículos 4x4."

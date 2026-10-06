@@ -36,7 +36,7 @@ class MotonomadsHtmlGenerator:
             ths = "".join(f"<th>{h}</th>" for h in headers)
             return (
                 f'<div class="table-container">'
-                f'<table class="expedition-table">'
+                f'<table class="tour-table">'
                 f'<thead><tr>{ths}</tr></thead>'
                 f'<tbody>{"".join(tbody_rows)}</tbody>'
                 f'</table></div>'
@@ -82,7 +82,7 @@ class MotonomadsHtmlGenerator:
         tone_score: int = 90,
         geo_score: int = 90,
     ) -> str:
-        """Gera o arquivo HTML completo com abas interativas, métricas e design expedicionário."""
+        """Gera o arquivo HTML completo com abas interativas, métricas e design premium editorial."""
 
         article_html = self._markdown_to_html_simple(article_md)
         audit_html = self._markdown_to_html_simple(audit_md)
@@ -93,7 +93,7 @@ class MotonomadsHtmlGenerator:
 
         # Extrair H1 do artigo como Title Tag preliminar
         meta_title = f"{page_title} | MotoNomads"[:60]
-        meta_description = f"Guia de expedição MotoNomads: {page_title}. Dicas práticas de pilotagem, calibragem de pneus, altimetria e rotas testadas na estrada."[:158]
+        meta_description = f"Guia de viagem MotoNomads: {page_title}. Dicas práticas de pilotagem, calibragem de pneus, altimetria e rotas testadas na estrada."[:158]
 
         # Montar FAQ JSON-LD Schema
         faq_items = re.findall(r"###\s+([^\n\?]+\?)\n([^\n#]+)", article_md)
@@ -162,7 +162,7 @@ class MotonomadsHtmlGenerator:
             </div>
             """
         else:
-            onto_html = "<div class='onto-card'><p>Destino explorado com base nas diretrizes gerais de expedição MotoNomads.</p></div>"
+            onto_html = "<div class='onto-card'><p>Destino explorado com base nas diretrizes gerais de viagem MotoNomads.</p></div>"
 
         # Template HTML Completo
         full_html = f"""<!DOCTYPE html>
@@ -464,7 +464,7 @@ class MotonomadsHtmlGenerator:
             font-size: 17px;
         }}
 
-        /* Tabela Estilizada de Expedição */
+        /* Tabela Estilizada de Viagem/Tour */
         .table-container {{
             margin: 32px 0;
             overflow-x: auto;
@@ -472,14 +472,14 @@ class MotonomadsHtmlGenerator:
             border: 1px solid var(--border-subtle);
         }}
 
-        .expedition-table {{
+        .tour-table {{
             width: 100%;
             border-collapse: collapse;
             text-align: left;
             font-size: 15px;
         }}
 
-        .expedition-table th {{
+        .tour-table th {{
             background: #1e293b;
             color: #f8fafc;
             font-family: 'Outfit', sans-serif;
@@ -488,17 +488,17 @@ class MotonomadsHtmlGenerator:
             border-bottom: 1px solid var(--border-subtle);
         }}
 
-        .expedition-table td {{
+        .tour-table td {{
             padding: 14px 20px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.04);
             color: #cbd5e1;
         }}
 
-        .expedition-table tr:last-child td {{
+        .tour-table tr:last-child td {{
             border-bottom: none;
         }}
 
-        .expedition-table tr:hover td {{
+        .tour-table tr:hover td {{
             background: rgba(255, 255, 255, 0.02);
         }}
 
@@ -672,7 +672,7 @@ class MotonomadsHtmlGenerator:
             </div>
             <div class="metric-card">
                 <span class="metric-label">Palavra-Chave Foco</span>
-                <div class="metric-value" style="font-size: 18px; color: var(--orange-primary);">{target_keyword or 'Serra & Expedição'}</div>
+                <div class="metric-value" style="font-size: 18px; color: var(--orange-primary);">{target_keyword or 'Roteiro & Viagem'}</div>
                 <span class="metric-note">Intenção de busca informacional de viagem</span>
             </div>
         </div>

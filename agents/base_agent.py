@@ -169,7 +169,7 @@ class BaseAgent:
                 "Pilotos em motos Big Trail devem modular a frenagem antes da entrada de cada cotovelo e aplicar "
                 "contraesterço suave, mantendo a aceleração constante para estabilizar a suspensão.\n\n"
                 "## Preparação do Equipamento e Segurança de Estrada\n\n"
-                "O vestuário de expedição deve contemplar conjunto impermeável com proteções certificadas CE nível 2, "
+                "O vestuário para a viagem deve contemplar conjunto impermeável com proteções certificadas CE nível 2, "
                 "luvas com membrana respirável e jaqueta com forro térmico removível para a transição térmica de até 15°C.\n\n"
                 "Em veículos 4x4, mantenha a calibragem dos pneus All-Terrain em 30 a 32 PSI para maximizar a área "
                 "de contato e utilize a tração em modo 4H caso encontre óleo ou umidade nos trechos sombreados.\n\n"
@@ -186,7 +186,7 @@ class BaseAgent:
                 "### Onde abastecer antes de iniciar o trecho de subida?\n"
                 "O último posto confiável antes da serra fica no perímetro urbano de Lauro Müller. Não inicie a subida "
                 "com menos de um terço do tanque para garantir margem de segurança caso haja interdições de tráfego.\n\n"
-                "E você, já colocou a moto nessa serra ou tá planejando a sua primeira expedição? "
+                "E você, já colocou a moto nessa serra ou tá planejando a sua primeira viagem para lá? "
                 "Deixe seu comentário, prepare a máquina e nos vemos no asfalto. Boa estrada sempre!\n"
             )
         elif "Marcus Auditor" in self.name:

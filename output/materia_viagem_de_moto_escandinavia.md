@@ -1,14 +1,14 @@
 # Viagem de Moto pela Escandinávia: O Guia Definitivo do Mototurismo de Alto Padrão nos Fiordes
 
-A viagem de moto pela Escandinávia em padrão premium percorre 2.000 km entre Dinamarca, Suécia e Noruega no consagrado modelo Arrive & Ride. A expedição combina a pilotagem técnica da nova BMW R 1300 GS em ícones como o Trollstigen e a Atlantic Ocean Road com hospedagem em hotéis de categoria superior, retaguarda completa de carro de apoio para transporte de bagagens e imersão na alta gastronomia nórdica.
+A viagem de moto pela Escandinávia em padrão premium percorre 2.000 km entre Dinamarca, Suécia e Noruega no consagrado modelo Arrive & Ride. O tour combina a pilotagem técnica da nova BMW R 1300 GS em ícones como o Trollstigen e a Atlantic Ocean Road com hospedagem em hotéis de categoria superior, retaguarda completa de carro de apoio para transporte de bagagens e imersão na alta gastronomia nórdica.
 
 Olha só, existe uma ideia equivocada de que viagem de aventura precisa envolver perrengue ou desconforto desnecessário. Para mim, a verdadeira sofisticação no mototurismo é exatamente o oposto: é você acelerar por algumas das estradas mais cênicas e desafiadoras do mundo montado em uma máquina de última geração, sabendo que toda a retaguarda logística, o transporte das suas malas e a seleção dos melhores hotéis estão impecavelmente resolvidos nos bastidores. Na verdade, informação precisa e planejamento profissional são os pilares que transformam uma rota complexa pelo norte europeu em uma experiência de puro prazer ao guidão.
 
-## Ficha Técnica da Expedição Escandinávia
+## Ficha Técnica do Tour Escandinávia
 
-A expedição de alto padrão pela Escandinávia conecta três países em 2.000 km de rodovias impecáveis, integrando pilotagem em passos de alta montanha, travessias marítimas regulares em fiordes e suporte operacional permanente.
+O tour de alto padrão pela Escandinávia conecta três países em 2.000 km de rodovias impecáveis, integrando pilotagem em passos de alta montanha, travessias marítimas regulares em fiordes e suporte operacional permanente.
 
-| Parâmetro de Expedição | Especificação Técnica e Padrão de Serviço |
+| Parâmetro do Tour | Especificação Técnica e Padrão de Serviço |
 | :--- | :--- |
 | **Distância Total Rodada** | 2.000 km (Copenhague a Trondheim) |
 | **Formato Operacional** | Arrive & Ride Premium com Carro de Apoio para Bagagens e Guia Especialista |
@@ -47,13 +47,13 @@ O roteiro de 2.000 km entre Copenhague e Trondheim foi estruturado para intercal
 - **Dia 02: Copenhague (0 km)** — Dia livre dedicado ao melhor do design escandinavo e à alta culinária dinamarquesa, berço do movimento que revolucionou a gastronomia europeia moderna.
 - **Dia 03: Copenhague a Gotemburgo (320 km)** — Início da pilotagem com a travessia cinematográfica da Ponte de Øresund sobre o oceano, adentrando o território sueco por rodovias litorâneas bem pavimentadas.
 - **Dia 04: Gotemburgo a Oslo (280 km)** — Subida confortável margeando florestas nórdicas e lagos espelhados até a chegada à capital norueguesa, hospedando-se em hotel de categoria internacional.
-- **Dia 05: Oslo (0 km)** — Visita cultural aos preservados barcos vikings de 1.200 anos e ao histórico navio de exploração polar Fram, conhecendo as raízes expedicionárias do país.
+- **Dia 05: Oslo (0 km)** — Visita cultural aos preservados barcos vikings de 1.200 anos e ao histórico navio polar Fram, conhecendo as pioneiras navegações e a história marítima do país.
 - **Dia 06: Oslo a Ullensvang (350 km)** — Travessia do imponente planalto de Hardangervidda, a maior tundra de alta altitude da região nórdica, descendo até as margens do Hardangerfjord para pernoite em hotel histórico à beira-mar.
 - **Dia 07: Ullensvang a Sogndal (220 km)** — Primeiro contato com as balsas norueguesas e travessia das galerias iluminadas do monumental Túnel de Lærdal.
 - **Dia 08: Sogndal a Geiranger (230 km)** — Escalada rumo ao mirante panorâmico de Dalsnibba a 1.500 metros de altitude, com vista privilegiada para o fiorde de Geiranger antes de descer as curvas sinuosas até o hotel.
 - **Dia 09: Geiranger (0 km)** — Dia dedicado a um passeio privativo de barco pelas águas tombadas pela UNESCO, admirando as cachoeiras das Sete Irmãs e usufruindo das saunas e spas com vista panorâmica.
 - **Dia 10: Geiranger a Kristiansund (250 km)** — O grande dia da pilotagem: subida da sinuosa Ørnevegen (Estrada das Águias), os 11 cotovelos do Trollstigen e a aceleração sobre as curvas marinhas da Atlantic Ocean Road.
-- **Dia 11: Kristiansund a Trondheim (200 km)** — Último trecho costeiro contornando fiordes e baías abrigadas até Trondheim, com jantar de encerramento em celebração à expedição realizada.
+- **Dia 11: Kristiansund a Trondheim (200 km)** — Último trecho costeiro contornando fiordes e baías abrigadas até Trondheim, com jantar de encerramento em celebração à viagem realizada.
 - **Dia 12: Trondheim e Retorno ao Brasil** — Check-out tranquilo, devolução das motocicletas sem burocracia e traslado para o aeroporto com a mala cheia de histórias marcantes.
 
 ## Equipamento Técnico: Estanqueidade e Conforto Térmico de Primeira Linha
@@ -80,10 +80,10 @@ Ao término de cada jornada sobre duas rodas, a hospedagem em hotéis histórico
 No modelo Arrive & Ride, o piloto viaja com seu equipamento pessoal e encontra em Copenhague uma BMW R 1300 GS pronta, revisada e com tanque cheio. Toda a logística de hospedagem em hotéis superiores, transporte de malas em carro de apoio, pagamento de balsas, pedágios eletrônicos e suporte mecânico é operada integralmente pela MotoNomads.
 
 ### Preciso carregar toda a minha bagagem na moto durante o roteiro?
-Não. A expedição conta com carro de apoio dedicado que transporta as malas principais de hotel em hotel. Você pilota a motocicleta leve, levando apenas itens de uso pessoal imediato nos baús estanques da moto, o que maximiza o conforto, a segurança e a agilidade nas curvas de montanha.
+Não. O tour conta com carro de apoio dedicado que transporta as malas principais de hotel em hotel. Você pilota a motocicleta leve, levando apenas itens de uso pessoal imediato nos baús estanques da moto, o que maximiza o conforto, a segurança e a agilidade nas curvas de montanha.
 
 ### Qual é a documentação necessária para brasileiros participarem do tour?
-É exigido passaporte válido por no mínimo 6 meses além da data de retorno ao Brasil, Carteira Nacional de Habilitação (CNH) válida da categoria A e Permissão Internacional para Dirigir (PID). O seguro viagem internacional com cobertura médico-hospitalar completa já está integrado ao pacote da expedição.
+É exigido passaporte válido por no mínimo 6 meses além da data de retorno ao Brasil, Carteira Nacional de Habilitação (CNH) válida da categoria A e Permissão Internacional para Dirigir (PID). O seguro viagem internacional com cobertura médico-hospitalar completa já está integrado ao pacote do tour.
 
 ### Qual o nível de experiência em pilotagem exigido para o roteiro?
 O tour é desenhado para motociclistas habituados com motos Big Trail e que possuam boa desenvoltura em curvas de serra. Embora trechos como o Trollstigen apresentem cotovelos técnicos com até 12% de inclinação, o roteiro é 100% asfaltado e o suporte de carro de apoio, aliado ao ritmo seguro do guia especialista, garante uma viagem tranquila e prazerosa.

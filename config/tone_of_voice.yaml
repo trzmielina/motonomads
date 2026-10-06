@@ -81,6 +81,10 @@ forbidden_cliches:
   - "paisagem de tirar o fôlego"
   - "sem mais delongas"
   - "em suma"
+  - "expedição" # BANIDO POR EDUARDO GENERALI: remete a perrengue/aventura amadora. Usar sempre "tour" ou "viagem".
+  - "expedições"
+  - "expedicao"
+  - "expedicoes"
 
 narrative_structure_9_steps:
   1: "Gancho (situação real e reconhecível)"
@@ -115,7 +119,7 @@ pillars:
     tone: "Voz de Eduardo Generali: piloto experiente, fala de igual para igual, técnico, sensorial e estradeiro"
     keywords: ["Big Trail", "contraesterço", "autonomia", "baús estanques", "curvas cegas", "vento cruzado", "frenagem motor", "Boa estrada sempre"]
   offroad_4x4:
-    tone: "Voz de Eduardo Generali aplicada a expedições: autossuficiência, respeito à máquina e calma em terreno difícil"
+    tone: "Voz de Eduardo Generali aplicada a viagens: autossuficiência, respeito à máquina e calma em terreno difícil"
     keywords: ["4x4 reduzida (4L)", "bloqueio de diferencial", "calibragem de pneus (PSI)", "ângulo de ataque", "guincho", "estepe", "overlanding"]
   aventura_outdoor:
     tone: "Voz de Eduardo Generali aplicada à natureza: superação com segurança, respeito aos elementos e Não Deixe Rastro"

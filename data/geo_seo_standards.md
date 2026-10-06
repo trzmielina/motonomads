@@ -43,7 +43,7 @@ Enquanto o SEO tradicional foca em palavras-chave e backlinks, o **GEO** foca em
 - [ ] **Hierarquia de Headings:** H1 -> H2 -> H3 estritamente sequenciais (sem pular níveis).
 - [ ] **Slug da URL:** Curto, separado por hífens, sem preposições inúteis (ex: `/mototurismo-serra-do-rio-do-rastro`).
 - [ ] **Alt Text de Imagens:** Descritivo, técnico e contextual (ex: *"Piloto em moto Big Trail fazendo curva na descida da Serra do Rio do Rastro com neblina ao fundo"*).
-- [ ] **Links Internos e Externos:** Pelo menos 2 links externos para fontes oficiais (ex: Parques Nacionais, DNIT) e sugestões de links internos para outras expedições do portal.
+- [ ] **Links Internos e Externos:** Pelo menos 2 links externos para fontes oficiais (ex: Parques Nacionais, DNIT) e sugestões de links internos para outros tours e viagens do portal.
 
 ---
 

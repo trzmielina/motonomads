@@ -209,7 +209,7 @@ def main_menu():
                     console.print(f"  • [cyan]{f}[/cyan]")
 
         elif choice == "5":
-            console.print("[bold green]Até a próxima expedição! 🏍️💨[/bold green]")
+            console.print("[bold green]Até a próxima viagem! 🏍️💨[/bold green]")
             break
 
 

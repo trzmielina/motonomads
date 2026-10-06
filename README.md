@@ -23,7 +23,7 @@ O projeto **Motonomads** foi projetado para operar como um **ecossistema 100% ap
 | **Diego Jornalista** 🔍 | Investigador & Fact-Checker | Disseca o texto base, levanta dados do DNIT, altimetria, clima e fontes oficiais. |
 | **Marina Estrategista** 🎯 | Arquiteta SEO & GEO | Define hierarquia semântica, blocos de direct-answer para IAs e Ficha Técnica Tabular. |
 | **Rodrigo Mototurismo** 🏍️ | Especialista em 2 Rodas | Redação com a perspectiva e termos reais de quem pilota na estrada e na terra. |
-| **Bruno Off-Road** 🚙 | Especialista em 4x4 & Overlanding | Redação focada em mecânica de campo, tração integral e expedições severas. |
+| **Bruno Off-Road** 🚙 | Especialista em 4x4 & Overlanding | Redação focada em mecânica de campo, tração integral e viagens severas de overlanding. |
 | **Clara Aventura** 🧗 | Especialista em Outdoor & Trekking | Redação focada em esforço físico, travessias e conduta de baixo impacto ambiental. |
 | **Lucas Turismo** 🗺️ | Especialista em Destinos & Cultura | Redação focada na experiência de viagem, hospitalidade, cidades-base e gastronomia. |
 | **Helena Editora** 🖋️ | Editora-Chefe & Guardiã do Tom | Harmonização de estilo, eliminação de clichês e polimento com a Tabela de Tom de Voz. |

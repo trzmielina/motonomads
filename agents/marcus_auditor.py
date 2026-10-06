@@ -46,7 +46,7 @@ class MarcusAuditor(BaseAgent):
         prompt = (
             f"AUDITORIA EDITORIAL E TÉCNICA - MOTONOMADS\n\n"
             f"PILAR AVALIADO: {pilar.upper()}\n"
-            f"PALAVRA-CHAVE FOCO: {palavra_chave or 'Geral de Destino/Expedição'}\n\n"
+            f"PALAVRA-CHAVE FOCO: {palavra_chave or 'Geral de Destino/Viagem'}\n\n"
             f"ARTIGO A SER AUDITADO:\n{artigo_final}\n\n"
             f"CRITÉRIOS DE AVALIAÇÃO (0 a 25 pontos cada):\n"
             f"1. TOM DE VOZ MOTONOMADS (0-25): Houve uso de clichês proibidos? O tom transmite vivência e autoridade real?\n"

@@ -85,7 +85,7 @@ class MotonomadsOrchestrator:
         if raw_data.get("status") == "error":
             return {"status": "error", "error": raw_data.get("error_message")}
 
-        titulo_original = raw_data.get("title", "Expedição sem título")
+        titulo_original = raw_data.get("title", "Viagem sem título")
         conteudo_original = raw_data.get("content", "")
 
         # ETAPA INTERMEDIÁRIA: Consulta ao Grafo Ontológico MotoNomads

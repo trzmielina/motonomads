@@ -4,7 +4,7 @@
 equipamentos_e_seguranca:
   - id: "sistema_tres_camadas"
     nome: "Sistema de Três Camadas de Vestuário"
-    categoria: "Vestuário de Pilotagem e Expedição"
+    categoria: "Vestuário de Pilotagem e Viagem"
     camada_1: "Segunda pele térmica em poliamida ou lã Merino (absorve e dissipa o suor sem gelar o corpo)"
     camada_2: "Fleece térmico ou jaqueta leve de pluma (cria câmara de ar aquecido isolante)"
     camada_3: "Jaqueta em Cordura 500D/1000D com membrana impermeável/respirável (Gore-Tex ou equivalente) e protetores CE Nível 2"
@@ -12,7 +12,7 @@ equipamentos_e_seguranca:
       - "Nunca utilizar algodão como primeira camada: o algodão encharca de suor e gela na serra, induzindo hipotermia."
       - "Ajustar zíperes de ventilação frontal e exaustão traseira antes de entrar em trechos de baixa velocidade no calor."
 
-  - id: "capacete_expedicao_dual_sport"
+  - id: "capacete_viagem_dual_sport"
     nome: "Capacete Dual Sport / Híbrido com Pala e Viseira"
     categoria: "Segurança de Cabeça"
     caracteristicas_obrigatorias:

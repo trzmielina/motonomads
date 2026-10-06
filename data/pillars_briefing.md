@@ -1,6 +1,6 @@
 # Briefing e Guias dos 4 Pilares Especialistas Motonomads
 
-O Motonomads opera sobre 4 pilares de especialidade. Cada artigo pode ter um pilar principal dominante ou combinar elementos de dois ou mais pilares em uma expedição híbrida.
+O Motonomads opera sobre 4 pilares de especialidade. Cada artigo pode ter um pilar principal dominante ou combinar elementos de dois ou mais pilares em uma viagem híbrida.
 
 ---
 
@@ -19,7 +19,7 @@ O Motonomads opera sobre 4 pilares de especialidade. Cada artigo pode ter um pil
 
 ## 2. Pilar 4x4 & Overlanding (Especialista: Bruno Off-Road 🚙)
 
-* **Foco:** Expedições automotivas com tração integral, transposição de terrenos severos, autossuficiência e acampamento veicular (barracas de teto).
+* **Foco:** Viagens automotivas com tração integral, transposição de terrenos severos, autossuficiência e acampamento veicular (barracas de teto).
 * **Veículos Comuns:** Troller T4, Toyota Hilux/SW4, Suzuki Jimny/Sierra, Mitsubishi Pajero, Land Rover Defender, picapes preparadas.
 * **Aspectos Técnicos Obrigatórios no Texto:**
   * Uso correto do 4x4 High (4H), 4x4 Low (Reduzida / 4L) e bloqueio do diferencial traseiro/central.
@@ -32,7 +32,7 @@ O Motonomads opera sobre 4 pilares de especialidade. Cada artigo pode ter um pil
 
 ## 3. Pilar Aventura & Outdoor (Especialista: Clara Aventura 🧗)
 
-* **Foco:** Expedições a pé, montanhismo, travessias em parques nacionais, ecoturismo e vivência na natureza selvagem.
+* **Foco:** Travessias a pé, montanhismo, caminhadas em parques nacionais, ecoturismo e vivência na natureza selvagem.
 * **Aspectos Técnicos Obrigatórios no Texto:**
   * Altimetria acumulada, relevo acidentado, trilhas técnicas e travessias de rio.
   * Preparação física, aclimatação e hidratação adequada.
